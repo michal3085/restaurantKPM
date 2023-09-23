@@ -45,7 +45,7 @@
 
         <div class="contact-info d-flex align-items-center">
             <i class="bi bi-phone d-flex align-items-center"><span>+1 5589 55488 55</span></i>
-            <i class="bi bi-clock d-flex align-items-center ms-4"><span> Mon-Sat: 11AM - 23PM</span></i>
+            <i class="bi bi-clock d-flex align-items-center ms-4"><span> {{__('Mon-Sun: 3PM - 9PM')}}</span></i>
         </div>
 
         <div class="languages d-none d-md-flex align-items-center">
@@ -105,12 +105,12 @@
     <div class="container position-relative text-center text-lg-start" data-aos="zoom-in" data-aos-delay="100">
         <div class="row">
             <div class="col-lg-8">
-                <h1>Welcome to <span>Restaurantly</span></h1>
+                <h1>{{__('Welcome to')}} <span>Rêve Bar & Restaurant</span></h1>
                 <h2>Delivering great food for more than 18 years!</h2>
 
                 <div class="btns">
-                    <a href="#menu" class="btn-menu animated fadeInUp scrollto">Our Menu</a>
-                    <a href="#book-a-table" class="btn-book animated fadeInUp scrollto">Book a Table</a>
+                    <a href="#menu" class="btn-menu animated fadeInUp scrollto">{{__('Our Menu')}}</a>
+                    <a href="#book-a-table" class="btn-book animated fadeInUp scrollto">{{__('Book a table')}}</a>
                 </div>
             </div>
             <div class="col-lg-4 d-flex align-items-center justify-content-center position-relative" data-aos="zoom-in" data-aos-delay="200">
