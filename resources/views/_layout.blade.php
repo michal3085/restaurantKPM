@@ -238,7 +238,7 @@
                         <a href="#">{{ __('Corn-fed chicken fillet on the bone') }}</a>
                     </div>
                     <div class="menu-ingredients">
-                        {{ __('tarragon butter/potato gratin/tomato salad') }} <p>250g/200g/100g</p>
+                        {{ __('tarragon butter/potato gratin/tomato salad') }} <p>250g/100g/200g</p>
                     </div>
                 </div>
 
