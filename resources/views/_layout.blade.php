@@ -134,7 +134,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
-                    <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
+                    <h3>{{ __('About') }}</h3>
                     <p class="fst-italic">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
                         magna aliqua.
@@ -201,14 +201,14 @@
 
             <div class="section-title">
                 <h2>Menu</h2>
-                <p>Check Our Tasty Menu</p>
+                <p>{{__('Enjoy your meal!')}}</p>
             </div>
 
             <div class="row" data-aos="fade-up" data-aos-delay="100">
                 <div class="col-lg-12 d-flex justify-content-center">
                     <ul id="menu-flters">
-                        <li data-filter="*" class="filter-active">All</li>
-                        <li data-filter=".filter-starters">Starters</li>
+{{--                        <li data-filter="*" class="filter-active">All</li>--}}
+                        <li data-filter=".filter-main">{{ __('Main dishes') }}</li>
                         <li data-filter=".filter-salads">Salads</li>
                         <li data-filter=".filter-specialty">Specialty</li>
                     </ul>
@@ -217,17 +217,27 @@
 
             <div class="row menu-container" data-aos="fade-up" data-aos-delay="200">
 
-                <div class="col-lg-6 menu-item filter-starters">
-                    <img src="assets/img/menu/lobster-bisque.jpg" class="menu-img" alt="">
+                <div class="col-lg-6 menu-item filter-main">
+                    <img src="assets/img/menu/REVEMENU1S.jpg" class="menu-img" alt="">
                     <div class="menu-content">
-                        <a href="#">Lobster Bisque</a><span>$5.95</span>
+                        <a href="#">{{ __('Spinach lasagne') }}</a>
                     </div>
                     <div class="menu-ingredients">
-                        Lorem, deren, trataro, filede, nerada
+                        {{ __('tomato sauce/arugula salad') }} <p>250g/150g/80g</p>
                     </div>
                 </div>
 
-                <div class="col-lg-6 menu-item filter-specialty">
+                <div class="col-lg-6 menu-item filter-main">
+                    <img src="assets/img/menu/REVEMENU1S.jpg" class="menu-img" alt="">
+                    <div class="menu-content">
+                        <a href="#">{{ __('Corn-fed chicken fillet on the bone') }}</a>
+                    </div>
+                    <div class="menu-ingredients">
+                        {{ __('tarragon butter/potato gratin/tomato salad') }} <p>250g/200g/100g</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 menu-item filter-main">
                     <img src="assets/img/menu/bread-barrel.jpg" class="menu-img" alt="">
                     <div class="menu-content">
                         <a href="#">Bread Barrel</a><span>$6.95</span>
