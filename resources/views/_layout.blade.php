@@ -207,10 +207,15 @@
             <div class="row" data-aos="fade-up" data-aos-delay="100">
                 <div class="col-lg-12 d-flex justify-content-center">
                     <ul id="menu-flters">
-{{--                        <li data-filter="*" class="filter-active">All</li>--}}
                         <li data-filter=".filter-main">{{ __('Main dishes') }}</li>
-                        <li data-filter=".filter-salads">Salads</li>
-                        <li data-filter=".filter-specialty">Specialty</li>
+                        <li data-filter=".filter-steaks">{{ __('Steaks') }}</li>
+                        <li data-filter=".filter-pasta">{{ __('Pasta') }}</li>
+                        <li data-filter=".filter-dessert">{{ __('Dessert') }}</li>
+                        <li data-filter=".filter-starters">{{ __('Starters') }}</li>
+                        <li data-filter=".filter-soups">{{ __('Soups') }}</li>
+                        <li data-filter=".filter-salads">{{ __('Salads') }}</li>
+                        <li data-filter=".filter-kids">{{ __('For kids') }}</li>
+                        <li data-filter="*">{{ __('All dishes') }}</li>
                     </ul>
                 </div>
             </div>
@@ -247,7 +252,47 @@
                     </div>
                 </div>
 
-                <div class="col-lg-6 menu-item filter-starters">
+                <div class="col-lg-6 menu-item filter-soups">
+                    <img src="assets/img/menu/TOMATOSOUP.jpg" class="menu-img" alt="">
+                    <div class="menu-content">
+                        <a href="#">{{ __('Creamed toasted tomato') }}</a>
+                    </div>
+                    <div class="menu-ingredients">
+                        {{ __('ricotta/herbal ciabatta') }} <p>300g</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 menu-item filter-steaks">
+                    <img src="assets/img/menu/STEAK400.jpg" class="menu-img" alt="">
+                    <div class="menu-content">
+                        <a href="#">{{ __('Rib Eye') }}</a>
+                    </div>
+                    <div class="menu-ingredients">
+                        {{ __('All steaks are served with the addition of Murray River Salt from Australia, French fries, mixed salad and chimichurri') }} <p>350g</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 menu-item filter-steaks">
+                    <img src="assets/img/menu/STEAK400.jpg" class="menu-img" alt="">
+                    <div class="menu-content">
+                        <a href="#">{{ __('PorterHause') }}</a>
+                    </div>
+                    <div class="menu-ingredients">
+                        {{ __('All steaks are served with the addition of Murray River Salt from Australia, French fries, mixed salad and chimichurri') }} <p>500g</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 menu-item filter-steaks">
+                    <img src="assets/img/menu/STEAK400.jpg" class="menu-img" alt="">
+                    <div class="menu-content">
+                        <a href="#">{{ __('Côte de boeuf') }}</a>
+                    </div>
+                    <div class="menu-ingredients">
+                        {{ __('All steaks are served with the addition of Murray River Salt from Australia, French fries, mixed salad and chimichurri') }} <p>450g</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 menu-item filter-specialty">
                     <img src="assets/img/menu/cake.jpg" class="menu-img" alt="">
                     <div class="menu-content">
                         <a href="#">Crab Cake</a><span>$7.95</span>

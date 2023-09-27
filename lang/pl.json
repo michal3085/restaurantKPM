@@ -8,13 +8,24 @@
   "Contact": "Kontakt",
   "Book a table": "Zarezerwuj stolik",
   "Welcome to": "Witamy w",
-
   "Our Menu": "Nasze menu",
   "Mon-Sun: 3PM - 9PM": "Pon-Niedz 15:00 - 21:00",
+
+  "Steaks": "Steki",
+  "Pasta": "Makarony",
+  "Dessert": "Desery",
+  "Starters": "Przystawki",
+  "Soups": "Zupy",
+  "Salads": "Sałatki",
+  "For kids": "Dla dzieci",
   "Main dishes": "Dania główne",
+  "All dishes": "Wszystkie dania",
   "Enjoy your meal!": "Smacznego!",
   "Spinach lasagne": "Lasagne ze szpinakiem",
   "tomato sauce/arugula salad": "sos pomidorowy/sałatka z rukoli",
   "Corn-fed chicken fillet on the bone": "Filet z kurczaka kukurydzianego z kostką",
-  "tarragon butter/potato gratin/tomato salad": "masło estragonowe/gratin ziemniaczane/sałatka z pomidorów"
+  "tarragon butter/potato gratin/tomato salad": "masło estragonowe/gratin ziemniaczane/sałatka z pomidorów",
+  "Creamed toasted tomato": "Krem z pieczonych pomidorów",
+  "ricotta/herbal ciabatta": "ricotta/ziołowa ciabatta",
+  "All steaks are served with the addition of Murray River Salt from Australia, French fries, mixed salad and chimichurri" : "Wszystkie steki podajemy z dodatkiem Soli z rzeki Murray z Australii, frytkami, mixem sałat oraz chimichurri"
 }
