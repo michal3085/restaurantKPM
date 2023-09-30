@@ -60,6 +60,12 @@
                     this.setCustomValidity(errorMessage);
                 }
             });
+
+            $("#time").on("keydown", function (e) {
+                if (!(e.key >= '0' && e.key <= '9' || e.key === ':' || e.key === 'Backspace' || e.key === 'Delete' || e.key === 'ArrowLeft' || e.key === 'ArrowRight' || e.key === 'Tab')) {
+                    e.preventDefault();
+                }
+            });
         });
 
         $(function () {
