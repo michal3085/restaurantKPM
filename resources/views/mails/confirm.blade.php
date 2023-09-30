@@ -9,10 +9,10 @@
                     <h2>Odpowiemy na Twoje zgłoszenie, najszbciej jak to możliwe.</h2>
 
                     <div class="btns">
-                        <a href="#menu" class="btn-menu animated fadeInUp scrollto">{{__('Our Menu')}}</a>
+                        <a href="{{ route('home') }}" class="btn-menu animated fadeInUp scrollto">{{__('Home')}}</a>
                     </div>
                 </div>
             </div>
         </div>
-    </section><!-- End Hero -->
+    </section>
 @endsection

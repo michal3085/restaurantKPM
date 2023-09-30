@@ -25,8 +25,9 @@ class ReservationMail extends Mailable
 
     public function build()
     {
+        $subject = 'Rezerwacja: ' . $this->data['date'] . ' ilość osób: ' . $this->data['people'];
         return $this->view('mails.reservation')
-            ->subject('Nowa rezerwacja')
+            ->subject($subject)
             ->with([
                 'data' => $this->data
             ]);

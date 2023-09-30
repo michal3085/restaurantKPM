@@ -34,7 +34,8 @@
     <script>
         $( function() {
             $( "#date" ).datepicker({
-                dateFormat: "dd-mm-yy" // Tutaj możesz zmienić format daty
+                dateFormat: "dd-mm-yy", // Tutaj możesz zmienić format daty
+                minDate: 0,
             });
         } );
 
