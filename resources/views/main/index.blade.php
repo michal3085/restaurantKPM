@@ -492,7 +492,7 @@
                             <div class="validate"></div>
                         </div>
                         <div class="col-lg-4 col-md-6 form-group mt-3">
-                            <input type="text" name="date" class="form-control" id="date" placeholder="{{__('Date')}}" data-rule="minlen:4" data-msg="Please enter at least 4 chars" required>
+                            <input type="text" name="date" class="form-control" id="date" placeholder="{{__('Date')}}" data-rule="minlen:4" data-msg="Please enter at least 4 chars" readonly="readonly" required>
                             <div class="validate"></div>
                         </div>
                         <div class="col-lg-4 col-md-6 form-group mt-3">
