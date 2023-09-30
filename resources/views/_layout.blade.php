@@ -69,7 +69,8 @@
 
             messageInput.on("input", function () {
                 var messageLength = $(this).val().length;
-                charCount.text("Characters: " + messageLength + "/2000");
+                var characters = @json(__('Characters '));
+                charCount.text(characters + messageLength + "/2000");
 
                 // Walidacja, czy liczba znaków nie przekracza 2000
                 if (messageLength > 2000) {
