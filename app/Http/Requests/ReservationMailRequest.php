@@ -25,7 +25,8 @@ class ReservationMailRequest extends FormRequest
             'name' => 'required|max:100',
             'email' => 'required|max:200',
             'people' => 'required|numeric',
-            'date' => 'required'
+            'date' => 'required',
+            'message' => 'max:2500'
         ];
     }
 }

@@ -62,6 +62,24 @@
             });
         });
 
+        $(function () {
+            // Inicjalizacja licznika znaków
+            var messageInput = $("#message");
+            var charCount = $("#charCount");
+
+            messageInput.on("input", function () {
+                var messageLength = $(this).val().length;
+                charCount.text("Characters: " + messageLength + "/2000");
+
+                // Walidacja, czy liczba znaków nie przekracza 2000
+                if (messageLength > 2000) {
+                    this.setCustomValidity("Message must not exceed 2000 characters.");
+                } else {
+                    this.setCustomValidity("");
+                }
+            });
+        });
+
     </script>
 
 

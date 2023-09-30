@@ -505,8 +505,9 @@
                         </div>
                     </div>
                     <div class="form-group mt-3">
-                        <textarea class="form-control" name="message" rows="5" placeholder="{{__('Message')}}"></textarea>
+                        <textarea class="form-control" id="message" name="message" rows="5" placeholder="{{__('Message')}}" maxlength="2000"></textarea>
                         <div class="validate"></div>
+                        <div id="charCount"></div>
                     </div>
                     <div class="mb-3">
                         <div class="loading">Loading</div>
