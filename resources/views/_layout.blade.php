@@ -25,6 +25,19 @@
     <link href="{{asset('assets/vendor/glightbox/css/glightbox.min.css')}}" rel="stylesheet">
     <link href="{{asset('assets/vendor/swiper/swiper-bundle.min.css')}}" rel="stylesheet">
 
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script>
+        $( function() {
+            $( "#date" ).datepicker({
+                dateFormat: "dd-mm-yy" // Tutaj możesz zmienić format daty
+            });
+        } );
+    </script>
+
     <!-- Template Main CSS File -->
     <link href="{{asset('assets/css/style.css')}}" rel="stylesheet">
 
@@ -574,7 +587,8 @@
                 <p>Book a Table</p>
             </div>
 
-            <form action="forms/book-a-table.php" method="post" role="form" class="php-email-form" data-aos="fade-up" data-aos-delay="100">
+            <form action="{{ route('send.mail') }}" method="post" class="php-email-form">
+                @csrf
                 <div class="row">
                     <div class="col-lg-4 col-md-6 form-group">
                         <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
@@ -1021,7 +1035,6 @@
 <script src="{{asset('assets/vendor/glightbox/js/glightbox.min.js')}}"></script>
 <script src="{{asset('assets/vendor/isotope-layout/isotope.pkgd.min.js')}}"></script>
 <script src="{{asset('assets/vendor/swiper/swiper-bundle.min.js')}}"></script>
-<script src="{{asset('assets/vendor/php-email-form/validate.js')}}"></script>
 
 <!-- Template Main JS File -->
 <script src="{{asset('assets/js/main.js')}}"></script>
