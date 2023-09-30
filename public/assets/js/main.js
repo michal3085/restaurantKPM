@@ -185,6 +185,14 @@
 
       let menuFilters = select('#menu-flters li', true);
 
+      // Dodaj klasę filter-active do pierwszego elementu .filter-main
+      menuFilters[0].classList.add('filter-active');
+
+      // Początkowe ukrycie elementów, które nie pasują do .filter-main
+      menuIsotope.arrange({
+        filter: '.filter-main'
+      });
+
       on('click', '#menu-flters li', function(e) {
         e.preventDefault();
         menuFilters.forEach(function(el) {
@@ -200,7 +208,6 @@
         });
       }, true);
     }
-
   });
 
   /**
