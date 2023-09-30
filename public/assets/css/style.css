@@ -1731,3 +1731,12 @@ section {
   font-size: 13px;
   color: #fff;
 }
+
+.golden-frame {
+  border: 2px solid gold; /* Zwiększ szerokość granic na 4 piksele i ustaw obramowanie na złote */
+  border-radius: 20px; /* Zaokrąglone krawędzie */
+  padding: 40px; /* Zwiększ odstęp wewnątrz ramki na 40 pikseli */
+  margin: 20px auto; /* Dodaj marginesy na górze i dołu oraz automatycznie centruj element w poziomie */
+  width: 80%; /* Ustaw szerokość na 80% szerokości kontenera nadrzędnego */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Cień */
+}

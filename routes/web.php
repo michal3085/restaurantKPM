@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ReservationController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,6 +17,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::middleware(['env.auth'])->group(function () {
     Route::get('/', [HomeController::class, 'index'])->name('home');
+    Route::post('/send-mail', [ReservationController::class, 'sendMail'])->name('send.mail');
 
     Route::get('/{locale}', function ($locale) {
         app()->setLocale($locale);
