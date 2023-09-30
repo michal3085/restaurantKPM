@@ -496,7 +496,7 @@
                             <div class="validate"></div>
                         </div>
                         <div class="col-lg-4 col-md-6 form-group mt-3">
-                            <input type="text" class="form-control" name="time" id="time" placeholder="Time" data-rule="minlen:4" data-msg="Please enter at least 4 chars" required>
+                            <input type="text" class="form-control" name="time" id="time" placeholder="Time" data-rule="minlen:4" data-msg="Please enter at least 4 chars" required inputmode="numeric" required>
                             <div class="validate"></div>
                         </div>
                         <div class="col-lg-4 col-md-6 form-group mt-3">
