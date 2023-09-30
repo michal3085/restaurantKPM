@@ -30,13 +30,40 @@
     <link rel="stylesheet" href="/resources/demos/style.css">
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
     <script>
         $( function() {
             $( "#date" ).datepicker({
                 dateFormat: "dd-mm-yy" // Tutaj możesz zmienić format daty
             });
         } );
+
+        $(function () {
+            $("#time").mask("99:99", { placeholder: "__:__" });
+
+
+            document.getElementById('time').addEventListener('input', function () {
+                var value = this.value;
+                var timeParts = value.split(':');
+
+                if (
+                    timeParts.length === 2 &&
+                    /^\d{2}$/.test(timeParts[0]) &&
+                    /^\d{2}$/.test(timeParts[1]) &&
+                    parseInt(timeParts[0]) >= 0 && parseInt(timeParts[0]) <= 23 &&
+                    parseInt(timeParts[1]) >= 0 && parseInt(timeParts[1]) <= 59
+                ) {
+                    this.setCustomValidity('');
+                } else {
+                    var errorMessage = @json(__('Please enter a valid time in HH:MM (24-hour) format.'));
+                    this.setCustomValidity(errorMessage);
+                }
+            });
+        });
+
     </script>
+
+
 
     <!-- Template Main CSS File -->
     <link href="{{asset('assets/css/style.css')}}" rel="stylesheet">
@@ -591,11 +618,11 @@
                 @csrf
                 <div class="row">
                     <div class="col-lg-4 col-md-6 form-group">
-                        <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+                        <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" required>
                         <div class="validate"></div>
                     </div>
                     <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
-                        <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email">
+                        <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" required>
                         <div class="validate"></div>
                     </div>
                     <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
@@ -603,15 +630,15 @@
                         <div class="validate"></div>
                     </div>
                     <div class="col-lg-4 col-md-6 form-group mt-3">
-                        <input type="text" name="date" class="form-control" id="date" placeholder="Date" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+                        <input type="text" name="date" class="form-control" id="date" placeholder="Date" data-rule="minlen:4" data-msg="Please enter at least 4 chars" required>
                         <div class="validate"></div>
                     </div>
                     <div class="col-lg-4 col-md-6 form-group mt-3">
-                        <input type="text" class="form-control" name="time" id="time" placeholder="Time" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+                        <input type="text" class="form-control" name="time" id="time" placeholder="Time" data-rule="minlen:4" data-msg="Please enter at least 4 chars" required>
                         <div class="validate"></div>
                     </div>
                     <div class="col-lg-4 col-md-6 form-group mt-3">
-                        <input type="number" class="form-control" name="people" id="people" placeholder="# of people" data-rule="minlen:1" data-msg="Please enter at least 1 chars">
+                        <input type="number" class="form-control" name="people" id="people" placeholder="# of people" data-rule="minlen:1" data-msg="Please enter at least 1 chars" required>
                         <div class="validate"></div>
                     </div>
                 </div>

@@ -22,7 +22,10 @@ class ReservationMailRequest extends FormRequest
     public function rules(): array
     {
         return [
-            //
+            'name' => 'required|max:100',
+            'email' => 'required|max:200',
+            'people' => 'required|numeric',
+            'date' => 'required'
         ];
     }
 }
