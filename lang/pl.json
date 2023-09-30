@@ -7,9 +7,11 @@
   "Gallery": "Galeria",
   "Contact": "Kontakt",
   "Book a table": "Zarezerwuj stolik",
+  "Book a Table": "Zarezerwuj Stolik",
   "Welcome to": "Witamy w",
   "Our Menu": "Nasze menu",
   "Mon-Sun: 3PM - 9PM": "Pon-Niedz 15:00 - 21:00",
+  "Send": "Wyślij",
 
   "Steaks": "Steki",
   "Pasta": "Makarony",
@@ -28,5 +30,15 @@
   "Creamed toasted tomato": "Krem z pieczonych pomidorów",
   "ricotta/herbal ciabatta": "ricotta/ziołowa ciabatta",
   "All steaks are served with the addition of Murray River Salt from Australia, French fries, mixed salad and chimichurri" : "Wszystkie steki podajemy z dodatkiem Soli z rzeki Murray z Australii, frytkami, mixem sałat oraz chimichurri",
-  "Please enter a valid time in HH:MM (24-hour) format.": "Wprowadź poprawną godzinę w formacie GG:MM"
+
+  "Reservation": "Rezerwacja",
+  "Please enter a valid time in HH:MM (24-hour) format.": "Wprowadź poprawną godzinę w formacie GG:MM",
+  "We sent your request to our restaurant": "Wysłaliśmy Twoje zapytanie do naszej restauracji",
+  "We will respond to your application as soon as possible": "Odpowiemy na Twoje zgłoszenie, najszbciej jak to możliwe",
+  "Your Name": "Imię i Nazwisko",
+  "Your Email": "Twój adres email",
+  "Your Phone": "Numer telefonu",
+  "Date": "Data",
+  "# of people": "Ilość osób",
+  "Message": "Uwagi"
 }
