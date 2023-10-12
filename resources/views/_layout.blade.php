@@ -104,6 +104,8 @@
 </head>
 
 <body>
+<!-- ======= Cookies and PP info ======= -->
+    @include('_cookies_info')
 
 <!-- ======= Top Bar ======= -->
 <div id="topbar" class="d-flex align-items-center fixed-top">
