@@ -45,12 +45,42 @@
             </div>
 
             <div class="col-lg-6 menu-item filter-main">
-                <img src="assets/img/menu/bread-barrel.jpg" class="menu-img" alt="">
+                <img src="assets/img/menu/porkTenderloin.jpg" class="menu-img" alt="">
                 <div class="menu-content">
-                    <a href="#">Bread Barrel</a><span>$6.95</span>
+                    <a href="#">{{ __('Pork tenderloin in puff pastry with dijon mustard') }}</a>
                 </div>
                 <div class="menu-ingredients">
-                    Lorem, deren, trataro, filede, nerada
+                    {{ __('boletus sauce/mixed salad') }}
+                </div>
+            </div>
+
+            <div class="col-lg-6 menu-item filter-main">
+                <img src="assets/img/menu/whiteFishFilet.jpg" class="menu-img" alt="">
+                <div class="menu-content">
+                    <a href="#">{{ __('White fish fillet in a butter and leek sauce with sesame') }}</a>
+                </div>
+                <div class="menu-ingredients">
+                    <p>200g/100g</p>
+                </div>
+            </div>
+
+            <div class="col-lg-6 menu-item filter-main">
+                <img src="assets/img/menu/REVEMENU1S.jpg" class="menu-img" alt="">
+                <div class="menu-content">
+                    <a href="#">{{ __('Duck leg confit') }}</a>
+                </div>
+                <div class="menu-ingredients">
+                    {{ __('orange peel/red cabbage with cranberry/thyme mashed potatoes') }} <p>150g/150g/200g</p>
+                </div>
+            </div>
+
+            <div class="col-lg-6 menu-item filter-main">
+                <img src="assets/img/menu/REVEMENU1S.jpg" class="menu-img" alt="">
+                <div class="menu-content">
+                    <a href="#">{{ __('Traditional pork chop') }}</a>
+                </div>
+                <div class="menu-ingredients">
+                    {{ __('pan fried potatoes/sauerkraut') }} <p>260g/200g/150g<p>
                 </div>
             </div>
 
