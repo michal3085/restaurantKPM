@@ -94,6 +94,26 @@
                 </div>
             </div>
 
+            <div class="col-lg-6 menu-item filter-soups">
+                <img src="assets/img/menu/TOMATOSOUP.jpg" class="menu-img" alt="">
+                <div class="menu-content">
+                    <a href="#">{{ __('Creamed toasted tomato') }}</a>
+                </div>
+                <div class="menu-ingredients">
+                    {{ __('ricotta/herbal ciabatta') }} <p>300g</p>
+                </div>
+            </div>
+
+            <div class="col-lg-6 menu-item filter-soups">
+                <img src="assets/img/menu/TOMATOSOUP.jpg" class="menu-img" alt="">
+                <div class="menu-content">
+                    <a href="#">{{ __('Old Polish horseradish borscht') }}</a>
+                </div>
+                <div class="menu-ingredients">
+                    {{ __('smoked meat/baked white sausage') }} <p>300g</p>
+                </div>
+            </div>
+
             <div class="col-lg-6 menu-item filter-steaks">
                 <img src="assets/img/menu/STEAK400.jpg" class="menu-img" alt="">
                 <div class="menu-content">
@@ -135,12 +155,32 @@
             </div>
 
             <div class="col-lg-6 menu-item filter-salads">
-                <img src="assets/img/menu/caesar.jpg" class="menu-img" alt="">
+                <img src="assets/img/menu/romaineLettuee.jpg" class="menu-img" alt="">
                 <div class="menu-content">
-                    <a href="#">Caesar Selections</a><span>$8.95</span>
+                    <a href="#">{{ __('Romaine lettuee') }}</a>
                 </div>
                 <div class="menu-ingredients">
-                    Lorem, deren, trataro, filede, nerada
+                    {{ __('chilli-mango dressing/grilled halloumi cheese/avocado/pickled cucumber/coriander/roasted cashew nuts') }} <p>80g/20g/100g/30g</p>
+                </div>
+            </div>
+
+            <div class="col-lg-6 menu-item filter-salads">
+                <img src="assets/img/menu/romaineLettuee.jpg" class="menu-img" alt="">
+                <div class="menu-content">
+                    <a href="#">{{ __('Seasonal salad mix') }}</a>
+                </div>
+                <div class="menu-ingredients">
+                    {{ __('yoghurt dressing/fresh cucumber/cherry tomatoes/fried egg/grilled chicken/toast') }} <p>80g/20g/100g/30g</p>
+                </div>
+            </div>
+
+            <div class="col-lg-6 menu-item filter-salads">
+                <img src="assets/img/menu/romaineLettuee.jpg" class="menu-img" alt="">
+                <div class="menu-content">
+                    <a href="#">{{ __('Salad mix') }}</a>
+                </div>
+                <div class="menu-ingredients">
+                    {{ __('lemon dressing/smoked salmon/brine cheese/pickled beetroot/cucumber/pickled Takuan radish/quinoa') }} <p>80g/15g/95g/25g/10g</p>
                 </div>
             </div>
 
@@ -155,32 +195,32 @@
             </div>
 
             <div class="col-lg-6 menu-item filter-starters">
-                <img src="assets/img/menu/mozzarella.jpg" class="menu-img" alt="">
+                <img src="assets/img/menu/beefTartare.jpg" class="menu-img" alt="">
                 <div class="menu-content">
-                    <a href="#">Mozzarella Stick</a><span>$4.95</span>
+                    <a href="#">{{ __('Traditional beef tartare') }}</a>
                 </div>
                 <div class="menu-ingredients">
-                    Lorem, deren, trataro, filede, nerada
+                    {{ __('dijon mustard/egg yolk/pickles/apers/bread') }}<p>100g/60g/100g</p>
                 </div>
             </div>
 
-            <div class="col-lg-6 menu-item filter-salads">
-                <img src="assets/img/menu/greek-salad.jpg" class="menu-img" alt="">
+            <div class="col-lg-6 menu-item filter-starters">
+                <img src="assets/img/menu/beefTartare.jpg" class="menu-img" alt="">
                 <div class="menu-content">
-                    <a href="#">Greek Salad</a><span>$9.95</span>
+                    <a href="#">{{ __('Beetroot carpaccio') }}</a>
                 </div>
                 <div class="menu-ingredients">
-                    Fresh spinach, crisp romaine, tomatoes, and Greek olives
+                    {{ __('arugula/lambs lettuee/roasted sunflower seeds/walnut/parmesan/honey vinaigrette') }}<p>200g/10g/30g/10g</p>
                 </div>
             </div>
 
-            <div class="col-lg-6 menu-item filter-salads">
-                <img src="assets/img/menu/spinach-salad.jpg" class="menu-img" alt="">
+            <div class="col-lg-6 menu-item filter-starters">
+                <img src="assets/img/menu/beefTartare.jpg" class="menu-img" alt="">
                 <div class="menu-content">
-                    <a href="#">Spinach Salad</a><span>$9.95</span>
+                    <a href="#">{{ __('Herring matjas') }}</a>
                 </div>
                 <div class="menu-ingredients">
-                    Fresh spinach with mushrooms, hard boiled egg, and warm bacon vinaigrette
+                    {{ __('cottage cheese with black cumin/marinated onion/dill/potato grilled with herbs/smoked bacon') }}<p>130g/50g/50g</p>
                 </div>
             </div>
 
