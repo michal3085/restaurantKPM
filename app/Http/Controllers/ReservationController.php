@@ -12,6 +12,6 @@ class ReservationController extends Controller
     {
         Mail::to('michal3085@gmail.com')->send(new ReservationMail($request->all()));
 
-        return view('mails.confirm')->with(['menu' => 0]);
+        return view('mails.reservationConfirmation')->with(['menu' => 0]);
     }
 }
