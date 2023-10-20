@@ -13,7 +13,7 @@
         <!-- End About Section -->
 
         <!-- ======= Why Us Section ======= -->
-            @include('main.sections._why_us')
+{{--            @include('main.sections._why_us')--}}
         <!-- End Why Us Section -->
 
         <!-- ======= Menu Section ======= -->

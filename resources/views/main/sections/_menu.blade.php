@@ -144,16 +144,6 @@
                 </div>
             </div>
 
-            <div class="col-lg-6 menu-item filter-specialty">
-                <img src="assets/img/menu/cake.jpg" class="menu-img" alt="">
-                <div class="menu-content">
-                    <a href="#">Crab Cake</a><span>$7.95</span>
-                </div>
-                <div class="menu-ingredients">
-                    A delicate crab cake served on a toasted roll with lettuce and tartar sauce
-                </div>
-            </div>
-
             <div class="col-lg-6 menu-item filter-salads">
                 <img src="assets/img/menu/romaineLettuee.jpg" class="menu-img" alt="">
                 <div class="menu-content">
@@ -181,16 +171,6 @@
                 </div>
                 <div class="menu-ingredients">
                     {{ __('lemon dressing/smoked salmon/brine cheese/pickled beetroot/cucumber/pickled Takuan radish/quinoa') }} <p>80g/15g/95g/25g/10g</p>
-                </div>
-            </div>
-
-            <div class="col-lg-6 menu-item filter-specialty">
-                <img src="assets/img/menu/tuscan-grilled.jpg" class="menu-img" alt="">
-                <div class="menu-content">
-                    <a href="#">Tuscan Grilled</a><span>$9.95</span>
-                </div>
-                <div class="menu-ingredients">
-                    Grilled chicken with provolone, artichoke hearts, and roasted red pesto
                 </div>
             </div>
 
@@ -254,6 +234,49 @@
                 </div>
             </div>
 
+            <div class="col-lg-6 menu-item filter-pasta">
+                <img src="assets/img/menu/Udon.jpg" class="menu-img" alt="">
+                <div class="menu-content">
+                    <a href="#">{{ __('Udon') }}</a><span>35,90 PLN</span>
+                </div>
+                <div class="menu-ingredients">
+                    {{ __('oyster mushrooms/sugar peas/sweet chilli/sesame/choose from: shrimps, smoked tofu, chicken') }} <p>150g/40g/100g/20g/110g</p>
+                </div>
+            </div>
+
+            <div class="col-lg-6 menu-item filter-kids">
+                <img src="assets/img/menu/TOMATOSOUP.jpg" class="menu-img" alt="">
+                <div class="menu-content">
+                    <a href="#">{{ __('Tomato soup with noodles') }}</a><span>10 PLN</span>
+                </div>
+                <div class="menu-ingredients"></div>
+            </div>
+
+            <div class="col-lg-6 menu-item filter-kids">
+                <img src="assets/img/menu/REVEMENU1S.jpg" class="menu-img" alt="">
+                <div class="menu-content">
+                    <a href="#">{{ __('Pancakes with sweet cheese') }}</a><span>15 PLN</span>
+                </div>
+                <div class="menu-ingredients">
+                    {{ __('seasonal fruit and chocolate glaze') }}
+                </div>
+            </div>
+
+            <div class="col-lg-6 menu-item filter-kids">
+                <img src="assets/img/menu/REVEMENU1S.jpg" class="menu-img" alt="">
+                <div class="menu-content">
+                    <a href="#">{{ __('Chicken strips with fries and ketchup') }}</a><span>20 PLN</span>
+                </div>
+                <div class="menu-ingredients"></div>
+            </div>
+
+            <div class="col-lg-6 menu-item filter-kids">
+                <img src="assets/img/menu/REVEMENU1S.jpg" class="menu-img" alt="">
+                <div class="menu-content">
+                    <a href="#">{{ __('Homemade fish fingers with french fries and yoghurt sauce') }}</a><span>20 PLN</span>
+                </div>
+                <div class="menu-ingredients"></div>
+            </div>
         </div>
 
     </div>
