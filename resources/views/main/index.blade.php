@@ -37,7 +37,7 @@
         <!-- End Book A Table Section -->
 
         <!-- ======= Testimonials Section ======= -->
-            @include('main.sections._testimonials')
+{{--            @include('main.sections._testimonials')--}}
         <!-- End Testimonials Section -->
 
         <!-- ======= Gallery Section ======= -->
@@ -45,7 +45,7 @@
         <!-- End Gallery Section -->
 
         <!-- ======= Chefs Section ======= -->
-            @include('main.sections._chefs')
+{{--            @include('main.sections._chefs')--}}
         <!-- End Chefs Section -->
 
         <!-- ======= Contact Section ======= -->
