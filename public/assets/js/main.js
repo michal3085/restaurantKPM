@@ -211,6 +211,44 @@
   });
 
   /**
+   * Drink isotope and filter
+   */
+  window.addEventListener('load', () => {
+    let menuContainer = select('.drink-container');
+    if (menuContainer) {
+      let menuIsotope = new Isotope(menuContainer, {
+        itemSelector: '.drink-item',
+        layoutMode: 'fitRows'
+      });
+
+      let menuFilters = select('#drink-flters li', true);
+
+      // Dodaj klasę filter-active do pierwszego elementu .filter-main
+      menuFilters[0].classList.add('filter-active');
+
+      // Początkowe ukrycie elementów, które nie pasują do .filter-main
+      menuIsotope.arrange({
+        filter: '.filter-drink'
+      });
+
+      on('click', '#drink-flters li', function(e) {
+        e.preventDefault();
+        menuFilters.forEach(function(el) {
+          el.classList.remove('filter-active');
+        });
+        this.classList.add('filter-active');
+
+        menuIsotope.arrange({
+          filter: this.getAttribute('data-filter')
+        });
+        menuIsotope.on('arrangeComplete', function() {
+          AOS.refresh()
+        });
+      }, true);
+    }
+  });
+
+  /**
    * Initiate glightbox 
    */
   const glightbox = GLightbox({

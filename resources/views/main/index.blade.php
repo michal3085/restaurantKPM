@@ -20,6 +20,10 @@
             @include('main.sections._menu')
         <!-- End Menu Section -->
 
+        <!-- ======= Drinks & Alcohol ======= -->
+            @include('main.sections._drinks')
+        <!-- End Drinks & Alcohol Section -->
+
         <!-- ======= Specials Section ======= -->
             @include('main.sections._specials')
         <!-- End Specials Section -->
