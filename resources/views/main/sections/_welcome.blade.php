@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-lg-8">
                 <h1>{{__('Welcome to')}} <span>Rêve Bar & Restaurant</span></h1>
-                <h2>Delivering great food for more than 18 years!</h2>
+                <h2>{{ __('We serve unique dishes of Polish cuisine') }}</h2>
 
                 <div class="btns">
                     <a href="#menu" class="btn-menu animated fadeInUp scrollto">{{__('Our Menu')}}</a>
