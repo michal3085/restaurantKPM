@@ -13,6 +13,14 @@
                     <li data-filter=".filter-beer">{{ __('Beer') }}</li>
                     <li data-filter=".filter-whisky">{{ __('Whisky') }}</li>
                     <li data-filter=".filter-brandy">{{ __('Cognac, Brandy') }}</li>
+                    <li data-filter=".filter-tequila">{{ __('Tequila') }}</li>
+                    <li data-filter=".filter-liqueurs">{{ __('Liqueurs') }}</li>
+                    <li data-filter=".filter-rum">{{ __('Rum') }}</li>
+                    <li data-filter=".filter-aperitif">{{ __('Aperitif') }}</li>
+                    <li data-filter=".filter-gin">{{ __('Gin') }}</li>
+                    <li data-filter=".filter-whiteWine">{{ __('White wine') }}</li>
+                    <li data-filter=".filter-pinkWine">{{ __('Pink wine') }}</li>
+                    <li data-filter=".filter-sparklingWine">{{ __('Sparkling wine') }}</li>
                 </ul>
             </div>
         </div>
@@ -186,7 +194,238 @@
                 </div>
             </div>
 
+            <div class="col-lg-6 drink-item filter-brandy">
+                <div class="drink-content">
+                    <a href="#">Hennessy VS 40 ml</a><span>28 PLN</span>
+                </div>
+            </div>
+
+            <div class="col-lg-6 drink-item filter-brandy">
+                <div class="drink-content">
+                    <a href="#">Meukow 40 ml</a><span>20 PLN</span>
+                </div>
+            </div>
+
 {{--END BRANDY--}}
+{{--TEQUILA--}}
+
+            <div class="col-lg-6 drink-item filter-tequila">
+                <div class="drink-content">
+                    <a href="#">Tequila Silver 40 ml</a><span>14 PLN</span>
+                </div>
+            </div>
+
+            <div class="col-lg-6 drink-item filter-tequila">
+                <div class="drink-content">
+                    <a href="#">Tequila Gold 40 ml</a><span>14 PLN</span>
+                </div>
+            </div>
+
+{{--END TEQUILA--}}
+{{--LIQUEURS--}}
+
+            <div class="col-lg-6 drink-item filter-liqueurs">
+                <div class="drink-content">
+                    <a href="#">Wiśniówka 40 ml</a><span>9 PLN</span>
+                </div>
+            </div>
+
+            <div class="col-lg-6 drink-item filter-liqueurs">
+                <div class="drink-content">
+                    <a href="#">Wiśniówka 0,5 l</a><span>75 PLN</span>
+                </div>
+            </div>
+
+            <div class="col-lg-6 drink-item filter-liqueurs">
+                <div class="drink-content">
+                    <a href="#">Jagermeister 40 ml</a><span>14 PLN</span>
+                </div>
+            </div>
+
+            <div class="col-lg-6 drink-item filter-liqueurs">
+                <div class="drink-content">
+                    <a href="#">Malibu 40 ml</a><span>12 PLN</span>
+                </div>
+            </div>
+
+{{--END LIQUEURS--}}
+{{--RUM--}}
+
+            <div class="col-lg-6 drink-item filter-rum">
+                <div class="drink-content">
+                    <a href="#">Bacardi (blanca, negra) 40 ml</a><span>12 PLN</span>
+                </div>
+            </div>
+
+{{--END RUM--}}
+{{--APERITIF--}}
+
+            <div class="col-lg-6 drink-item filter-aperitif">
+                <div class="drink-content">
+                    <a href="#">Martini 100 ml</a><span>15 PLN</span>
+                </div>
+            </div>
+
+            <div class="col-lg-6 drink-item filter-aperitif">
+                <div class="drink-content">
+                    <a href="#">Aperol 100 ml</a><span>12 PLN</span>
+                </div>
+            </div>
+
+            <div class="col-lg-6 drink-item filter-aperitif">
+                <div class="drink-content">
+                    <a href="#">Campari 40 ml</a><span>12 PLN</span>
+                </div>
+            </div>
+
+{{--END APERITIF--}}
+{{--GIN--}}
+
+            <div class="col-lg-6 drink-item filter-gin">
+                <div class="drink-content">
+                    <a href="#">Seagrams 40 ml</a><span>13 PLN</span>
+                </div>
+            </div>
+
+{{--END GIN--}}
+
+{{--WHITE WINE--}}
+
+            <div class="col-lg-6 drink-item filter-whiteWine">
+                <div class="drink-content">
+                    <a href="#">Olive Brook - Chardonnay 150 ml</a><span>15 PLN</span>
+                </div>
+                <div class="drink-ingredients">
+                    {{ __('dry wine') }}
+                </div>
+            </div>
+
+            <div class="col-lg-6 drink-item filter-whiteWine">
+                <div class="drink-content">
+                    <a href="#">Olive Brook - Chardonnay 750 ml</a><span>60 PLN</span>
+                </div>
+                <div class="drink-ingredients">
+                    {{ __('dry wine') }}
+                </div>
+            </div>
+
+            <div class="col-lg-6 drink-item filter-whiteWine">
+                <div class="drink-content">
+                    <a href="#">Barone Montalto Pinot Grigio 150 ml</a><span>30 PLN</span>
+                </div>
+                <div class="drink-ingredients">
+                    {{ __('dry wine') }}
+                </div>
+            </div>
+
+            <div class="col-lg-6 drink-item filter-whiteWine">
+                <div class="drink-content">
+                    <a href="#">Barone Montalto Pinot Grigio 750 ml</a><span>80 PLN</span>
+                </div>
+                <div class="drink-ingredients">
+                    {{ __('dry wine') }}
+                </div>
+            </div>
+
+            <div class="col-lg-6 drink-item filter-whiteWine">
+                <div class="drink-content">
+                    <a href="#">Olive Brook - Merlot 150 ml</a><span>15 PLN</span>
+                </div>
+                <div class="drink-ingredients">
+                    {{ __('dry wine') }}
+                </div>
+            </div>
+
+            <div class="col-lg-6 drink-item filter-whiteWine">
+                <div class="drink-content">
+                    <a href="#">Olive Brook - Merlot 750 ml</a><span>60 PLN</span>
+                </div>
+                <div class="drink-ingredients">
+                    {{ __('dry wine') }}
+                </div>
+            </div>
+
+            <div class="col-lg-6 drink-item filter-whiteWine">
+                <div class="drink-content">
+                    <a href="#">Chianti Piccini Riserva Colezzione Oro 150 ml</a><span>24 PLN</span>
+                </div>
+                <div class="drink-ingredients">
+                    {{ __('dry wine') }}
+                </div>
+            </div>
+
+            <div class="col-lg-6 drink-item filter-whiteWine">
+                <div class="drink-content">
+                    <a href="#">Chianti Piccini Riserva Colezzione Oro 750 ml</a><span>80 PLN</span>
+                </div>
+                <div class="drink-ingredients">
+                    {{ __('dry wine') }}
+                </div>
+            </div>
+
+{{--END WHITE WINE--}}
+
+{{--PINK WINE--}}
+
+            <div class="col-lg-6 drink-item filter-pinkWine">
+                <div class="drink-content">
+                    <a href="#">Pontes De Rei 150 ml</a><span>16 PLN</span>
+                </div>
+                <div class="drink-ingredients">
+                    {{ __('semi-dry wine') }}
+                </div>
+            </div>
+
+            <div class="col-lg-6 drink-item filter-pinkWine">
+                <div class="drink-content">
+                    <a href="#">Pontes De Rei 750 ml</a><span>80 PLN</span>
+                </div>
+                <div class="drink-ingredients">
+                    {{ __('semi-dry wine') }}
+                </div>
+            </div>
+
+{{--END PINK WINE--}}
+
+{{--SPARKLING WINE--}}
+
+            <div class="col-lg-6 drink-item filter-sparklingWine">
+                <div class="drink-content">
+                    <a href="#">Lambrusco bianco Frizzante 150 ml</a><span>15 PLN</span>
+                </div>
+                <div class="drink-ingredients">
+                    {{ __('semi-dry white wine') }}
+                </div>
+            </div>
+
+            <div class="col-lg-6 drink-item filter-sparklingWine">
+                <div class="drink-content">
+                    <a href="#">Lambrusco bianco Frizzante 750 ml</a><span>60 PLN</span>
+                </div>
+                <div class="drink-ingredients">
+                    {{ __('semi-dry white wine') }}
+                </div>
+            </div>
+
+            <div class="col-lg-6 drink-item filter-sparklingWine">
+                <div class="drink-content">
+                    <a href="#">Prosecco Viamora 150 ml</a><span>16 PLN</span>
+                </div>
+                <div class="drink-ingredients">
+                    {{ __('semi-dry white wine') }}
+                </div>
+            </div>
+
+            <div class="col-lg-6 drink-item filter-sparklingWine">
+                <div class="drink-content">
+                    <a href="#">Prosecco Viamora 750 ml</a><span>75 PLN</span>
+                </div>
+                <div class="drink-ingredients">
+                    {{ __('semi-dry white wine') }}
+                </div>
+            </div>
+
+{{--END SPARKLING WINE--}}
         </div>
 
     </div>
