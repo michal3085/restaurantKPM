@@ -27,12 +27,93 @@
 
         <div class="row drink-container" data-aos="fade-up" data-aos-delay="200">
 
+{{--DRINKS--}}
 
             <div class="col-lg-6 drink-item filter-drink">
                 <div class="drink-content">
-                    <a href="#">Drink</a><span>12 PLN</span>
+                    <a href="#">Espresso Martini</a><span>25 PLN</span>
                 </div>
             </div>
+
+            <div class="col-lg-6 drink-item filter-drink">
+                <div class="drink-content">
+                    <a href="#">Martini Tonic</a><span>25 PLN</span>
+                </div>
+            </div>
+
+            <div class="col-lg-6 drink-item filter-drink">
+                <div class="drink-content">
+                    <a href="#">Mojito</a><span>26 PLN</span>
+                </div>
+            </div>
+
+            <div class="col-lg-6 drink-item filter-drink">
+                <div class="drink-content">
+                    <a href="#">Mojito Owocowe</a><span>30 PLN</span>
+                </div>
+            </div>
+
+            <div class="col-lg-6 drink-item filter-drink">
+                <div class="drink-content">
+                    <a href="#">Campari Orange</a><span>25 PLN</span>
+                </div>
+            </div>
+
+            <div class="col-lg-6 drink-item filter-drink">
+                <div class="drink-content">
+                    <a href="#">Cuba Libre</a><span>25 PLN</span>
+                </div>
+            </div>
+
+            <div class="col-lg-6 drink-item filter-drink">
+                <div class="drink-content">
+                    <a href="#">Aperol Spritz</a><span>25 PLN</span>
+                </div>
+            </div>
+
+            <div class="col-lg-6 drink-item filter-drink">
+                <div class="drink-content">
+                    <a href="#">Sex on the beach</a><span>28 PLN</span>
+                </div>
+            </div>
+
+            <div class="col-lg-6 drink-item filter-drink">
+                <div class="drink-content">
+                    <a href="#">Blue Lagoon</a><span>25 PLN</span>
+                </div>
+            </div>
+
+            <div class="col-lg-6 drink-item filter-drink">
+                <div class="drink-content">
+                    <a href="#">Gin Tonic</a><span>25 PLN</span>
+                </div>
+            </div>
+
+            <div class="col-lg-6 drink-item filter-drink">
+                <div class="drink-content">
+                    <a href="#">Pina Colada</a><span>28 PLN</span>
+                </div>
+            </div>
+
+            <div class="col-lg-6 drink-item filter-drink">
+                <div class="drink-content">
+                    <a href="#">Whisky sour</a><span>28 PLN</span>
+                </div>
+            </div>
+
+            <div class="col-lg-6 drink-item filter-drink">
+                <div class="drink-content">
+                    <a href="#">Reve Drink</a><span>28 PLN</span>
+                </div>
+            </div>
+
+            <div class="col-lg-6 drink-item filter-drink">
+                <div class="drink-content">
+                    <a href="#">{{ __('Drink without alcohol') }}</a><span>20 PLN</span>
+                </div>
+            </div>
+
+{{--END DRINKS--}}
 
 {{--     BEERS       --}}
             <div class="col-lg-6 drink-item filter-beer">
