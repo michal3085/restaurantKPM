@@ -112,7 +112,7 @@
     <div class="container d-flex justify-content-center justify-content-md-between">
 
         <div class="contact-info d-flex align-items-center">
-            <i class="bi bi-phone d-flex align-items-center"><span>+1 5589 55488 55</span></i>
+            <i class="bi bi-phone d-flex align-items-center"><span>74 665 54 44</span></i>
             <i class="bi bi-clock d-flex align-items-center ms-4"><span> {{__('Mon-Sun: 3PM - 9PM')}}</span></i>
         </div>
 
