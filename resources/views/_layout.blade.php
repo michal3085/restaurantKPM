@@ -146,7 +146,7 @@
                     <li><a class="nav-link scrollto" href="#menu">Menu</a></li>
                     <li><a class="nav-link scrollto" href="#specials">{{__('Specials')}}</a></li>
                     <li><a class="nav-link scrollto" href="#events">{{__('Events')}}</a></li>
-                    <li><a class="nav-link scrollto" href="#chefs">{{__('Chefs')}}</a></li>
+{{--                    <li><a class="nav-link scrollto" href="#chefs">{{__('Chefs')}}</a></li>--}}
                     <li><a class="nav-link scrollto" href="#gallery">{{__('Gallery')}}</a></li>
                     {{--                <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>--}}
                     {{--                    <ul>--}}

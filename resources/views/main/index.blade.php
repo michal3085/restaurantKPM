@@ -32,6 +32,10 @@
             @include('main.sections._events')
         <!-- End Events Section -->
 
+        <!-- ======= Events Section ======= -->
+{{--        @include('main.sections._events2')--}}
+        <!-- End Events Section -->
+
         <!-- ======= Book A Table Section ======= -->
             @include('main.sections._reservation')
         <!-- End Book A Table Section -->
