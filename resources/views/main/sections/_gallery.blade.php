@@ -2,8 +2,8 @@
 
     <div class="container" data-aos="fade-up">
         <div class="section-title">
-            <h2>Gallery</h2>
-            <p>Some photos from Our Restaurant</p>
+            <h2>{{__('Gallery')}}</h2>
+            <p>{{ __('Photos of our restaurant')}}</p>
         </div>
     </div>
 
