@@ -6,7 +6,7 @@
             <p>{{__('Book a Table')}}</p>
         </div>
 
-        <form action="{{ route('send.mail') }}" method="post" class="php-email-form">
+        <form action="{{ route('send.mail') }}" method="post" id="myForm" class="php-email-form">
             @csrf
             <div class="row">
                 <div class="col-lg-4 col-md-6 form-group">
@@ -39,6 +39,22 @@
                 <div class="validate"></div>
                 <div id="charCount"></div>
             </div>
+
+            <div class="form-check">
+                <div class="custom-control custom-switch">
+                    <label class="custom-control-label" for="customSwitch1">
+                        <div class="checkbox-container">
+                            <input type="checkbox" class="checkbox" name="reservation_agree" id="customSwitch1" required>
+                            <span class="checkbox-label" style="font-size: 15px;">
+                                {{ __('I have read the privacy policy ') }} (link).
+                                {{ __(' I am aware that the administrator of my personal data is Munro sp. z o.o., based at 27 Jana Pawla II Avenue, 00-867 Warsaw, and that the personal data will be processed for the purpose of making the reservation.') }}
+                                <span style="color: red">*</span>
+                            </span>
+                        </div>
+                    </label>
+                </div>
+            </div>
+
             <div class="mb-3">
                 <div class="loading">Loading</div>
                 <div class="error-message"></div>
@@ -49,3 +65,13 @@
 
     </div>
 </section>
+<script>
+    $(document).ready(function () {
+        $('#myForm').submit(function (event) {
+            if (!$('#customSwitch1').prop('checked')) {
+                alert('Zaakceptuj politykę prywatności przed przesłaniem formularza.');
+                event.preventDefault(); // Zatrzymaj przesyłanie formularza
+            }
+        });
+    });
+</script>

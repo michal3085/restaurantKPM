@@ -1942,3 +1942,50 @@ section {
   width: 80%; /* Ustaw szerokość na 80% szerokości kontenera nadrzędnego */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Cień */
 }
+
+/* Dodatkowy CSS dla checkboxa */
+.custom-switch .custom-control-input:checked ~ .custom-control-label .checkbox-container .checkbox::before {
+  width: 24px; /* Dostosuj szerokość checkboxa */
+  height: 24px; /* Dostosuj wysokość checkboxa */
+}
+
+.custom-switch .custom-control-input:checked ~ .custom-control-label .checkbox-container .checkbox-label {
+  margin-left: 10px; /* Dostosuj odstęp między checkboxem a tekstem */
+  font-size: 14px; /* Dostosuj wielkość czcionki */
+}
+
+/* Dodatkowy CSS dla tekstu obok checkboxa */
+.checkbox-container {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox {
+  display: inline-block;
+  width: 24px; /* Dostosuj szerokość checkboxa */
+  height: 24px; /* Dostosuj wysokość checkboxa */
+  margin-right: 10px; /* Dostosuj odstęp między checkboxem a tekstem */
+  position: relative;
+  top: 3px; /* Dostosuj, aby wyśrodkować checkboxa względem tekstu */
+}
+
+.checkbox::before {
+  content: '';
+  display: inline-block;
+  width: 20px; /* Dostosuj szerokość checkboxa */
+  height: 20px; /* Dostosuj wysokość checkboxa */
+  border: 2px solid #cda45e;
+  background-color: #ffffff;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.custom-switch .custom-control-input:checked ~ .custom-control-label .checkbox::before {
+  background-color: #cda45e;
+  border-color: #cda45e;
+}
+
+.custom-switch .custom-control-input:checked ~ .custom-control-label .checkbox-label {
+  color: #cda45e; /* Kolor tekstu po zaznaczeniu checkboxa */
+}
