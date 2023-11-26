@@ -2,27 +2,24 @@
     <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-            <h2>Specials</h2>
-            <p>Check Our Specials</p>
+            <h2>{{__('Specials')}}</h2>
+            <p>{{__('Check Our Specials')}}</p>
         </div>
 
         <div class="row" data-aos="fade-up" data-aos-delay="100">
             <div class="col-lg-3">
                 <ul class="nav nav-tabs flex-column">
                     <li class="nav-item">
-                        <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1">Modi sit est</a>
+                        <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1">Drink Reve</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" data-bs-toggle="tab" href="#tab-2">Unde praesentium sed</a>
+                        <a class="nav-link" data-bs-toggle="tab" href="#tab-2">{{ __('Juicy pork tenderloin') }}</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" data-bs-toggle="tab" href="#tab-3">Pariatur explicabo vel</a>
+                        <a class="nav-link" data-bs-toggle="tab" href="#tab-3">Espresso Martini</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" data-bs-toggle="tab" href="#tab-4">Nostrum qui quasi</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-bs-toggle="tab" href="#tab-5">Iusto ut expedita aut</a>
+                        <a class="nav-link" data-bs-toggle="tab" href="#tab-4">{{ __('Cod fillet with rich interior') }}</a>
                     </li>
                 </ul>
             </div>
@@ -31,80 +28,44 @@
                     <div class="tab-pane active show" id="tab-1">
                         <div class="row">
                             <div class="col-lg-8 details order-2 order-lg-1">
-                                <h3>Architecto ut aperiam autem id</h3>
-                                <p class="fst-italic">Qui laudantium consequatur laborum sit qui ad sapiente
-                                    dila parde sonata raqer a videna mareta paulona marka</p>
-                                <p>Et nobis maiores eius. Voluptatibus ut enim blanditiis atque harum sint.
-                                    Laborum eos ipsum ipsa odit magni. Incidunt hic ut molestiae aut qui. Est
-                                    repellat minima eveniet eius et quis magni nihil. Consequatur dolorem
-                                    quaerat quos qui similique accusamus nostrum rem vero</p>
+                                <h3>Drink Reve</h3>
+                                <p class="fst-italic">{{ __('A drink whose main ingredients are Bacardi Carta Blanca, Malibu and a phenomenal strawberry puree.') }}</p>
                             </div>
                             <div class="col-lg-4 text-center order-1 order-lg-2">
-                                <img src="assets/img/specials-1.png" alt="" class="img-fluid">
+                                <img src="assets/img/specials/reve_drink.jpg" alt="" class="img-fluid">
                             </div>
                         </div>
                     </div>
                     <div class="tab-pane" id="tab-2">
                         <div class="row">
                             <div class="col-lg-8 details order-2 order-lg-1">
-                                <h3>Et blanditiis nemo veritatis excepturi</h3>
-                                <p class="fst-italic">Qui laudantium consequatur laborum sit qui ad sapiente
-                                    dila parde sonata raqer a videna mareta paulona marka</p>
-                                <p>Ea ipsum voluptatem consequatur quis est. Illum error ullam omnis quia et
-                                    reiciendis sunt sunt est. Non aliquid repellendus itaque accusamus eius et
-                                    velit ipsa voluptates. Optio nesciunt eaque beatae accusamus lerode pakto
-                                    madirna desera vafle de nideran pal</p>
+                                <h3>{{ __('Juicy pork tenderloin') }}</h3>
+                                <p class="fst-italic">{{ __('Juicy pork tenderloin, whoseflavor is highlighted by a hint of Dijon mustard and a buttery sauce of forest mushrooms. Served On a puree with French mustard, accompanied by a salad with vinaigrette dressing.') }}</p>
                             </div>
                             <div class="col-lg-4 text-center order-1 order-lg-2">
-                                <img src="assets/img/specials-2.png" alt="" class="img-fluid">
+                                <img src="assets/img/specials/dish1.jpg" alt="" class="img-fluid">
                             </div>
                         </div>
                     </div>
                     <div class="tab-pane" id="tab-3">
                         <div class="row">
                             <div class="col-lg-8 details order-2 order-lg-1">
-                                <h3>Impedit facilis occaecati odio neque aperiam sit</h3>
-                                <p class="fst-italic">Eos voluptatibus quo. Odio similique illum id quidem non
-                                    enim fuga. Qui natus non sunt dicta dolor et. In asperiores velit quaerat
-                                    perferendis aut</p>
-                                <p>Iure officiis odit rerum. Harum sequi eum illum corrupti culpa veritatis
-                                    quisquam. Neque necessitatibus illo rerum eum ut. Commodi ipsam minima
-                                    molestiae sed laboriosam a iste odio. Earum odit nesciunt fugiat sit ullam.
-                                    Soluta et harum voluptatem optio quae</p>
+                                <h3>Espresso Martini</h3>
+                                <p class="fst-italic">{{ __('is called by bartenders a modern classic. A chilled alcoholic beverage with caffeine, Which contains vodka, coffee liqueur, coffee Espresso and sugar syrup.') }}</p>
                             </div>
                             <div class="col-lg-4 text-center order-1 order-lg-2">
-                                <img src="assets/img/specials-3.png" alt="" class="img-fluid">
+                                <img src="assets/img/specials/espresso_martini.jpg" alt="" class="img-fluid">
                             </div>
                         </div>
                     </div>
                     <div class="tab-pane" id="tab-4">
                         <div class="row">
                             <div class="col-lg-8 details order-2 order-lg-1">
-                                <h3>Fuga dolores inventore laboriosam ut est accusamus laboriosam dolore</h3>
-                                <p class="fst-italic">Totam aperiam accusamus. Repellat consequuntur iure
-                                    voluptas iure porro quis delectus</p>
-                                <p>Eaque consequuntur consequuntur libero expedita in voluptas. Nostrum ipsam
-                                    necessitatibus aliquam fugiat debitis quis velit. Eum ex maxime error in
-                                    consequatur corporis atque. Eligendi asperiores sed qui veritatis aperiam
-                                    quia a laborum inventore</p>
+                                <h3>{{ __('Cod fillet with rich interior') }}</h3>
+                                <p class="fst-italic">{{ __('which consists of arugula and feta cheese. The delicate flavor of the fish is emphasized by cream and leek sauce, which is accompanied by a salad with the addition of zucchini. The whole dish is enlivened by a hint of sauce based on sesame oil.') }}</p>
                             </div>
                             <div class="col-lg-4 text-center order-1 order-lg-2">
-                                <img src="assets/img/specials-4.png" alt="" class="img-fluid">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tab-pane" id="tab-5">
-                        <div class="row">
-                            <div class="col-lg-8 details order-2 order-lg-1">
-                                <h3>Est eveniet ipsam sindera pad rone matrelat sando reda</h3>
-                                <p class="fst-italic">Omnis blanditiis saepe eos autem qui sunt debitis porro
-                                    quia.</p>
-                                <p>Exercitationem nostrum omnis. Ut reiciendis repudiandae minus. Omnis
-                                    recusandae ut non quam ut quod eius qui. Ipsum quia odit vero atque qui
-                                    quibusdam amet. Occaecati sed est sint aut vitae molestiae voluptate vel</p>
-                            </div>
-                            <div class="col-lg-4 text-center order-1 order-lg-2">
-                                <img src="assets/img/specials-5.png" alt="" class="img-fluid">
+                                <img src="assets/img/specials/dish2.jpg" alt="" class="img-fluid">
                             </div>
                         </div>
                     </div>

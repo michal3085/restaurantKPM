@@ -13,12 +13,16 @@
         <!-- End About Section -->
 
         <!-- ======= Why Us Section ======= -->
-{{--            @include('main.sections._why_us')--}}
+            @include('main.sections._why_us')
         <!-- End Why Us Section -->
 
         <!-- ======= Menu Section ======= -->
             @include('main.sections._menu')
         <!-- End Menu Section -->
+
+        <!-- ======= Drinks & Alcohol ======= -->
+            @include('main.sections._drinks')
+        <!-- End Drinks & Alcohol Section -->
 
         <!-- ======= Specials Section ======= -->
             @include('main.sections._specials')
@@ -28,12 +32,16 @@
             @include('main.sections._events')
         <!-- End Events Section -->
 
+        <!-- ======= Events Section ======= -->
+{{--        @include('main.sections._events2')--}}
+        <!-- End Events Section -->
+
         <!-- ======= Book A Table Section ======= -->
             @include('main.sections._reservation')
         <!-- End Book A Table Section -->
 
         <!-- ======= Testimonials Section ======= -->
-            @include('main.sections._testimonials')
+{{--            @include('main.sections._testimonials')--}}
         <!-- End Testimonials Section -->
 
         <!-- ======= Gallery Section ======= -->
@@ -41,7 +49,7 @@
         <!-- End Gallery Section -->
 
         <!-- ======= Chefs Section ======= -->
-            @include('main.sections._chefs')
+{{--            @include('main.sections._chefs')--}}
         <!-- End Chefs Section -->
 
         <!-- ======= Contact Section ======= -->
