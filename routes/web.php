@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\EventsController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ReservationController;
 use Illuminate\Support\Facades\Route;
@@ -17,7 +18,12 @@ use Illuminate\Support\Facades\Route;
 
 Route::middleware(['env.auth'])->group(function () {
     Route::get('/', [HomeController::class, 'index'])->name('home');
+
+    //RESERVATION MAIL
     Route::post('/send-mail', [ReservationController::class, 'sendMail'])->name('send.mail');
+
+    // EVENTS
+    Route::get('/event/{event}', [EventsController::class, 'showEvent'])->name('event.show');
 
     Route::get('/{locale}', function ($locale) {
         app()->setLocale($locale);
