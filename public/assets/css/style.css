@@ -1989,3 +1989,7 @@ section {
 .custom-switch .custom-control-input:checked ~ .custom-control-label .checkbox-label {
   color: #cda45e; /* Kolor tekstu po zaznaczeniu checkboxa */
 }
+
+.gold-text {
+  color: #cda45e;
+}
