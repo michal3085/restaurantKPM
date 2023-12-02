@@ -104,19 +104,17 @@
                             <br>
                             {{ __('Still water with lemon') }}
                             <br>
-                            Sok jabłkowy i pomarańczowy
+                            {{ __('Apple and orange juice') }}
                         </div>
                     </div>
                 </div>
-
-                {{--END SPARKLING WINE--}}
 
                 {{--     MENU II      --}}
                 <div class="col-lg-4 drink-item filter-menu2">
                     <div class="row">
                         <div class="text-center">
                             <h3 class="gold-text">{{ __('SOUP') }}</h3> <br>
-                            Barszcz z pasztecikiem
+                            {{ __('Borscht with pasty') }}
                             <br>
                         </div>
                     </div>
@@ -126,11 +124,11 @@
                     <div class="row">
                         <div class="text-center">
                             <h3 class="gold-text">{{ __('MAIN DISH') }}</h3> <br>
-                            Dorsz z tempurze
+                            {{ __('Cod with tempura') }}
                             <br>
-                            Puree z groszku i kremu fresh
+                            {{ __('Pureed peas and fresh cream') }}
                             <br>
-                            Pieczone warzywa
+                            {{ __('Roasted vegetables') }}
                         </div>
                     </div>
                 </div>
@@ -139,17 +137,17 @@
                     <div class="row">
                         <div class="text-center">
                             <h3 class="gold-text">{{ __('COLD PLATE') }}</h3> <br>
-                            Mix pierogów w sosie grzybowym
+                            {{ __('Mix of dumplings in mushroom sauce') }}
                             <br>
-                            Terrina z ryby
+                            {{ __('Terrina of fish') }}
                             <br>
-                            Sos tatarski
+                            {{ __('Tartar sauce') }}
                             <br>
-                            Śledź korzenny
+                            {{ __('Spicy herring') }}
                             <br>
-                            Faszerowana rolada z włoskiego chleba tramezini
+                            {{ __('Stuffed roll of Italian tramezini bread') }}
                             <br>
-                            Sałatka śledziowa
+                            {{ __('Herring salad') }}
                         </div>
                     </div>
                 </div>
@@ -158,9 +156,9 @@
                     <div class="row">
                         <div class="text-center">
                             <h3 class="gold-text">{{ __('DESSERT') }}</h3> <br>
-                            Sernik z pomarańczową skórką
+                            {{ __('Cheesecake with orange peel') }}
                             <br>
-                            Makowiec z bakaliami
+                            {{ __('Poppyseed cake with nuts') }}
                             <br>
                         </div>
                     </div>
@@ -170,9 +168,9 @@
                     <div class="row">
                         <div class="text-center">
                             <h3 class="gold-text">{{ __('DRINKS (UNLIMITED)') }}</h3> <br>
-                            Woda niegazowana z cytryną
+                            {{ __('Still water with lemon') }}
                             <br>
-                            Sok jabłkowy i pomarańczowy
+                            {{ __('Apple and orange juice') }}
                         </div>
                     </div>
                 </div>
