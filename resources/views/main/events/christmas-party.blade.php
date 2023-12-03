@@ -1,24 +1,33 @@
 @extends('_layout')
 
 @section('content')
-    <section id="about" class="about" style="height: 90vh; position: relative; padding-top: 250px;">
-        <div class="container mb-2" data-aos="fade-up">
+    <section id="about" class="about" style="height: 50vh; position: relative; padding-top: 250px;">
+        <div class="container" data-aos="fade-up">
 
             <div class="row">
-                <div class="col-lg-6 order-1 order-lg-2" data-aos="zoom-in" data-aos-delay="100">
-                    <div class="about-img">
-                        <img src="{{ asset('assets/img/events/events1.jpeg') }}" alt="">
+                <div class="row">
+                    <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
+                        <div class="section-title">
+                            <p style="font-size: 50px;">{{__('Christmas Party')}}</p>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
-                    <h3>{{ __('Christmas Party') }}</h3>
-                    <ul>
-                        <li><i class="bi bi-check-circle"></i>{{ __('Our menu is based on the highest quality products') }}</li>
-                        <li><i class="bi bi-check-circle"></i>{{ __('Unique interior, unparalleled design and attention to comfort') }}</li>
-                        <li><i class="bi bi-check-circle"></i>{{ __('Our cooks are united by passion and experience') }}</li>
-                    </ul>
-                </div>
             </div>
+{{--            <div class="row">--}}
+{{--                <div class="col-lg-6 order-1 order-lg-2" data-aos="zoom-in" data-aos-delay="100">--}}
+{{--                    <div class="about-img">--}}
+{{--                        <img src="{{ asset('assets/img/events/chr-party.jpg') }}" alt="">--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--                <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">--}}
+{{--                    <h3>{{ __('Christmas Party') }}</h3>--}}
+{{--                    <ul>--}}
+{{--                        <li><i class="bi bi-check-circle"></i>{{ __('Our menu is based on the highest quality products') }}</li>--}}
+{{--                        <li><i class="bi bi-check-circle"></i>{{ __('Unique interior, unparalleled design and attention to comfort') }}</li>--}}
+{{--                        <li><i class="bi bi-check-circle"></i>{{ __('Our cooks are united by passion and experience') }}</li>--}}
+{{--                    </ul>--}}
+{{--                </div>--}}
+{{--            </div>--}}
 
         </div>
     </section>
@@ -45,12 +54,15 @@
                 <div class="section-title drink-item filter-menu2">
                     <h2>140 PLN {{ __("per person") }}</h2>
                 </div>
+                <div class="section-title drink-item filter-menu3">
+                    <h2>170 PLN {{ __("per person") }}</h2>
+                </div>
 
                 <div class="col-lg-4 drink-item filter-drink">
                     <div class="row">
                             <div class="text-center">
                                 <h3 class="gold-text">{{ __('SOUP') }}</h3> <br>
-                                {{ __('Parsley and pear cream with a hint of coconut milk coconut milk') }}
+                                {{ __('Mushroom soup with noodles') }}
                                 <br>
                             </div>
                     </div>
@@ -175,6 +187,84 @@
                     </div>
                 </div>
                 {{--     MENU II END  --}}
+                {{--     MENU III     --}}
+
+                <div class="col-lg-4 drink-item filter-menu3">
+                    <div class="row">
+                        <div class="text-center">
+                            <h3 class="gold-text">{{ __('SOUP') }}</h3> <br>
+                            {{ __('Parsley and pear cream with a hint of coconut milk coconut milk') }}
+                            <br>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 drink-item filter-menu3">
+                    <div class="row">
+                        <div class="text-center">
+                            <h3 class="gold-text">{{ __('MAIN DISH') }}</h3> <br>
+                            {{ __('Roasted fillet of carp') }}
+                            <br>
+                            {{ __('Cod fillet in herbs') }}
+                            <br>
+                            {{ __('Gniocchi') }}
+                            <br>
+                            {{ __('Roasted yams') }}
+                            <br>
+                            {{ __('Salad of pickled vegetables') }}
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 drink-item filter-menu3">
+                    <div class="row">
+                        <div class="text-center">
+                            <h3 class="gold-text">{{ __('COLD PLATE') }}</h3> <br>
+                            {{ __('Pasties with cabbage and mushrooms') }}
+                            <br>
+                            {{ __('Mixed dumplings') }}
+                            <br>
+                            {{ __('Mushroom sauce') }}
+                            <br>
+                            {{ __('Tramezino roll with cheese, salmon and nigella') }}
+                            <br>
+                            {{ __('Tried and tested puff pastry pides') }}
+                            <br>
+                            {{ __('Green cocktail with seafood') }}
+                            <br>
+                            {{ __('Salad with marinated beet, salmon,') }}
+                            <br>
+                            {{ __('feta cheese, sesame in a sauce of mint and lime') }}
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 drink-item filter-menu3">
+                    <div class="row">
+                        <div class="text-center">
+                            <h3 class="gold-text">{{ __('DESSERT') }}</h3> <br>
+                            {{ __('Cheesecake with chocolate') }}
+                            <br>
+                            {{ __('Poppyseed cake') }}
+                            <br>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 drink-item filter-menu3">
+                    <div class="row">
+                        <div class="text-center">
+                            <h3 class="gold-text">{{ __('DRINKS (UNLIMITED)') }}</h3> <br>
+                            {{ __('Still water with lemon') }}
+                            <br>
+                            {{ __('Apple and orange juice') }}
+                            <br>
+                            {{ __('Coffee and tea') }}
+                        </div>
+                    </div>
+                </div>
+
+                {{--     MENU III END --}}
             </div>
 
         </div>
