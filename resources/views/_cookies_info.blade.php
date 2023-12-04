@@ -1,10 +1,8 @@
 
 <div id="simplecookienotification_v01" style="display: block; z-index: 99999; min-height: 35px; width: 300px; position: fixed; background: rgb(39, 8, 8); border: 2px outset rgb(240, 173, 173); text-align: center; color: rgb(119, 119, 119); bottom: 10px; left: 10px; box-shadow: rgba(0, 0, 0, 0.8) 0px 0px 4px 1px; border-radius: 15px;">
     <div style="padding:10px; margin-left:15px; margin-right:15px; font-size:14px; font-weight:normal;">
-        <span id="simplecookienotification_v01_powiadomienie">Ta strona używa plików cookies.</span><span id="br_pc_title_html"><br></span>
-        <a id="simplecookienotification_v01_polityka" href="http://jakwylaczyccookie.pl/polityka-cookie/" style="color: rgb(240, 173, 173);">Polityka Prywatności</a><span id="br_pc2_title_html"> &nbsp;&nbsp; </span>
-        <a id="simplecookienotification_v01_info" href="http://jakwylaczyccookie.pl/jak-wylaczyc-pliki-cookies/" style="color: rgb(240, 173, 173);">Jak wyłączyć cookies?</a><span id="br_pc3_title_html"> &nbsp;&nbsp; </span>
-        <a id="simplecookienotification_v01_info2" href="https://nety.pl/cyberbezpieczenstwo" style="color: rgb(240, 173, 173);">Cyberbezpieczeństwo</a><div id="jwc_hr1" style="height: 10px; display: block;"></div>
+        <span id="simplecookienotification_v01_powiadomienie">Na tej stronie zbieramy ciasteczka, by zapewnić prawidłowe funkcjonowanie i bezpieczeństwo strony internetowej. Zgodę na przechowywanie lub uzyskiwanie dostępu do cookies przez Munro sp. z o.o. na Twoim urządzeniu, wyrażasz za pomocą ustawień zainstalowanej na Twoim urządzeniu przeglądarki. Więcej informacji znajdziesz w naszej Polityce Prywatności</span><span id="br_pc_title_html"><br></span>
+        <a id="simplecookienotification_v01_polityka" href="{{ route('terms.show') }}" style="color: rgb(240, 173, 173);">Polityka Prywatności</a><span id="br_pc2_title_html"> &nbsp;&nbsp; </span>
         <a id="okbutton" href="javascript:simplecookienotification_v01_create_cookie('simplecookienotification_v01',1,7);" style="position: relative; background: rgb(240, 173, 173); color: rgb(255, 255, 255); padding: 5px 15px; text-decoration: none; font-size: 12px; font-weight: normal; border: 0px solid rgb(39, 8, 8); border-radius: 5px;">AKCEPTUJĘ</a><div id="jwc_hr2" style="height: 10px; display: block;"></div>
     </div>
 </div>

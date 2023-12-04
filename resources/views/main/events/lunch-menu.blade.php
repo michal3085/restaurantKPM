@@ -101,7 +101,7 @@
                         <div class="text-center">
                             <h3 class="gold-text">{{ __('LUNCH SET') }} I
                             <br>
-                                90 PLN/os.
+                                90 PLN / {{ __("per person") }}.
                             </h3> <br>
                             {{ __('Cream of white vegetables') }}
                             <br>
@@ -127,7 +127,7 @@
                         <div class="text-center">
                             <h3 class="gold-text">{{ __('LUNCH SET') }} II
                                 <br>
-                                110 PLN/os.
+                                110 PLN / {{ __("per person") }}.
                             </h3> <br>
                                 {{ __('Roasted cauliflower cream with truffle oil') }}
                             <br>

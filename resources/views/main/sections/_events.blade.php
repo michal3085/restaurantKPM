@@ -36,7 +36,6 @@
                                         <li><i class="bi bi-check-circled"></i>{{__('Company parties')}}</li>
                                         <li><i class="bi bi-check-circled"></i>{{__('Funeral banquet')}}</li>
                                         <li><a href="{{ route('event.show', 'lunch-menu') }}">{{__('Lunch')}}</a></li>
-                                        <li><i class="bi bi-check-circled"></i>{{__('e.t.c')}}</li>
                                     </ul>
                                 </div>
                             </div>

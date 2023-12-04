@@ -71,6 +71,22 @@
                                 <textarea class="form-control" name="message" rows="8" placeholder="{{__('Your message')}}"
                                           required></textarea>
                     </div>
+
+                    <div class="form-check">
+                        <div class="custom-control custom-switch">
+                            <label class="custom-control-label" for="">
+                                <div class="checkbox-container">
+                                    <input type="checkbox" class="checkbox" name="contact_agree" id="" required>
+                                    <span class="checkbox-label" style="font-size: 15px;">
+                                {{ __('I have read the privacy policy ') }} <a href="{{ route('terms.show') }}">(link)</a>.
+                                {{ __(' I am aware that the administrator of my personal data is Munro sp. z o.o., based at 27 Jana Pawła II Avenue, 00-867 Warsaw, and that the personal data will be processed for the purpose of contacting and handling my inquiry.') }}
+                                <span style="color: red">*</span>
+                            </span>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+
                     <div class="my-3">
                         <div class="loading">Loading</div>
                         <div class="error-message"></div>

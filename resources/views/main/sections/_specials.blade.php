@@ -19,7 +19,7 @@
                         <a class="nav-link" data-bs-toggle="tab" href="#tab-3">Espresso Martini</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" data-bs-toggle="tab" href="#tab-4">{{ __('Cod fillet with rich interior') }}</a>
+                        <a class="nav-link" data-bs-toggle="tab" href="#tab-4">{{ __('Cod fillet with rich stuffing') }}</a>
                     </li>
                 </ul>
             </div>
@@ -61,7 +61,7 @@
                     <div class="tab-pane" id="tab-4">
                         <div class="row">
                             <div class="col-lg-8 details order-2 order-lg-1">
-                                <h3>{{ __('Cod fillet with rich interior') }}</h3>
+                                <h3>{{ __('Cod fillet with rich stuffing') }}</h3>
                                 <p class="fst-italic">{{ __('which consists of arugula and feta cheese. The delicate flavor of the fish is emphasized by cream and leek sauce, which is accompanied by a salad with the addition of zucchini. The whole dish is enlivened by a hint of sauce based on sesame oil.') }}</p>
                             </div>
                             <div class="col-lg-4 text-center order-1 order-lg-2">

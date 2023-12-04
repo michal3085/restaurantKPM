@@ -3,6 +3,7 @@
 use App\Http\Controllers\EventsController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ReservationController;
+use App\Http\Controllers\TermsAndPoliticsController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -24,6 +25,9 @@ Route::middleware(['env.auth'])->group(function () {
 
     // EVENTS
     Route::get('/event/{event}', [EventsController::class, 'showEvent'])->name('event.show');
+
+    //TERMS
+    Route::get('/terms', [TermsAndPoliticsController::class, 'termsShow'])->name('terms.show');
 
     Route::get('/{locale}', function ($locale) {
         app()->setLocale($locale);
