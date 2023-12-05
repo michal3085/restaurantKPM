@@ -2,7 +2,7 @@
 <div id="simplecookienotification_v01" style="display: block; z-index: 99999; min-height: 35px; width: 300px; position: fixed; background: rgb(39, 8, 8); border: 2px outset rgb(240, 173, 173); text-align: center; color: rgb(119, 119, 119); bottom: 10px; left: 10px; box-shadow: rgba(0, 0, 0, 0.8) 0px 0px 4px 1px; border-radius: 15px;">
     <div style="padding:10px; margin-left:15px; margin-right:15px; font-size:14px; font-weight:normal;">
         <span id="simplecookienotification_v01_powiadomienie">Na tej stronie zbieramy ciasteczka, by zapewnić prawidłowe funkcjonowanie i bezpieczeństwo strony internetowej. Zgodę na przechowywanie lub uzyskiwanie dostępu do cookies przez Munro sp. z o.o. na Twoim urządzeniu, wyrażasz za pomocą ustawień zainstalowanej na Twoim urządzeniu przeglądarki. Więcej informacji znajdziesz w naszej Polityce Prywatności</span><span id="br_pc_title_html"><br></span>
-        @if (session('locale') === 'pl')
+        @if (session('locale') === 'pl' or session('locale') === null)
             <a id="simplecookienotification_v01_polityka" href="{{ route('pl.policy.show') }}" style="color: rgb(240, 173, 173);">Polityka Prywatności</a>
         @else
             <a id="simplecookienotification_v01_polityka" href="{{ route('eng.policy.show') }}" style="color: rgb(240, 173, 173);">Polityka Prywatności</a>

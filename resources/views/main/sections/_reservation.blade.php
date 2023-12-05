@@ -47,7 +47,7 @@
                             <input type="checkbox" class="checkbox" name="reservation_agree" id="customSwitch1" required>
                             <span class="checkbox-label" style="font-size: 15px;">
                                 {{ __('I have read the privacy policy, available at the link ') }}
-                                @if (session('locale') === 'pl')
+                                @if (session('locale') === 'pl' or session('locale') === null)
                                     <a href="{{ route('pl.policy.show') }}">(link)</a>
                                 @else
                                     <a href="{{ route('eng.policy.show') }}">(link)</a>
