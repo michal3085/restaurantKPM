@@ -48,9 +48,9 @@
                             <span class="checkbox-label" style="font-size: 15px;">
                                 {{ __('I have read the privacy policy, available at the link ') }}
                                 @if (session('locale') === 'pl' or session('locale') === null)
-                                    <a href="{{ route('pl.policy.show') }}">(link)</a>
+                                    <a href="{{ route('pl.policy.show') }}" target="_blank">(link)</a>
                                 @else
-                                    <a href="{{ route('eng.policy.show') }}">(link)</a>
+                                    <a href="{{ route('eng.policy.show') }}" target="_blank">(link)</a>
                                 @endif
                                 .
                                 {{ __(' I am aware that the administrator of my personal data is Munro sp. z o.o., based at 27 Jana Pawla II Avenue, 00-867 Warsaw, and that the personal data will be processed for the purpose of making the reservation.') }}

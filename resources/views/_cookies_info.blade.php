@@ -3,9 +3,9 @@
     <div style="padding:10px; margin-left:15px; margin-right:15px; font-size:14px; font-weight:normal;">
         <span id="simplecookienotification_v01_powiadomienie">Na tej stronie zbieramy ciasteczka, by zapewnić prawidłowe funkcjonowanie i bezpieczeństwo strony internetowej. Zgodę na przechowywanie lub uzyskiwanie dostępu do cookies przez Munro sp. z o.o. na Twoim urządzeniu, wyrażasz za pomocą ustawień zainstalowanej na Twoim urządzeniu przeglądarki. Więcej informacji znajdziesz w naszej Polityce Prywatności</span><span id="br_pc_title_html"><br></span>
         @if (session('locale') === 'pl' or session('locale') === null)
-            <a id="simplecookienotification_v01_polityka" href="{{ route('pl.policy.show') }}" style="color: rgb(240, 173, 173);">Polityka Prywatności</a>
+            <a id="simplecookienotification_v01_polityka" href="{{ route('pl.policy.show') }}" style="color: rgb(240, 173, 173);" target="_blank">Polityka Prywatności</a>
         @else
-            <a id="simplecookienotification_v01_polityka" href="{{ route('eng.policy.show') }}" style="color: rgb(240, 173, 173);">Polityka Prywatności</a>
+            <a id="simplecookienotification_v01_polityka" href="{{ route('eng.policy.show') }}" style="color: rgb(240, 173, 173);" target="_blank">Polityka Prywatności</a>
         @endif
         <span id="br_pc2_title_html"> &nbsp;&nbsp; </span>
         <a id="okbutton" href="javascript:simplecookienotification_v01_create_cookie('simplecookienotification_v01',1,7);" style="position: relative; background: rgb(240, 173, 173); color: rgb(255, 255, 255); padding: 5px 15px; text-decoration: none; font-size: 12px; font-weight: normal; border: 0px solid rgb(39, 8, 8); border-radius: 5px;">AKCEPTUJĘ</a><div id="jwc_hr2" style="height: 10px; display: block;"></div>

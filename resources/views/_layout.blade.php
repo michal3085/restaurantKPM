@@ -209,9 +209,9 @@
 {{--                        <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>--}}
 {{--                        <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>--}}
                         @if (session('locale') === 'pl' or session('locale') === null)
-                            <li><i class="bx bx-chevron-right"></i> <a href="{{ route('pl.policy.show') }}">{{__('Privacy policy')}}</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="{{ route('pl.policy.show') }}" target="_blank">{{__('Privacy policy')}}</a></li>
                         @else
-                            <li><i class="bx bx-chevron-right"></i> <a href="{{ route('eng.policy.show') }}">{{__('Privacy policy')}}</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="{{ route('eng.policy.show') }}" target="_blank">{{__('Privacy policy')}}</a></li>
                         @endif
                     </ul>
                 </div>
