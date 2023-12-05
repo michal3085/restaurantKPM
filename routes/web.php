@@ -27,7 +27,9 @@ Route::middleware(['env.auth'])->group(function () {
     Route::get('/event/{event}', [EventsController::class, 'showEvent'])->name('event.show');
 
     //TERMS
-    Route::get('/terms', [TermsAndPoliticsController::class, 'termsShow'])->name('terms.show');
+    Route::get('/policy/dupa', [TermsAndPoliticsController::class, 'getPlPrivacyPolicyPdf'])->name('policy.show');
+    Route::get('/policy/pl', [TermsAndPoliticsController::class, 'getPlPrivacyPolicyPdf'])->name('pl.policy.show');
+    Route::get('/policy/eng', [TermsAndPoliticsController::class, 'getEngPrivacyPolicyPdf'])->name('eng.policy.show');
 
     Route::get('/{locale}', function ($locale) {
         app()->setLocale($locale);

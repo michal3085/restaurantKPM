@@ -135,7 +135,7 @@
         @if (isset($menu) && $menu == 0)
             <nav id="navbar" class="navbar order-last order-lg-0">
                 <ul>
-                    <li><a class="nav-link scrollto active" href="#hero">{{__('Home')}}</a></li>
+                    <li><a class="nav-link scrollto active" href="{{ route('home') }}">{{__('Home')}}</a></li>
                 </ul>
             </nav>
         @else
@@ -208,7 +208,11 @@
 {{--                        <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>--}}
 {{--                        <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>--}}
 {{--                        <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>--}}
-                        <li><i class="bx bx-chevron-right"></i> <a href="{{ route('terms.show') }}">{{__('Privacy policy')}}</a></li>
+                        @if (session('locale') === 'pl')
+                            <li><i class="bx bx-chevron-right"></i> <a href="{{ route('pl.policy.show') }}">{{__('Privacy policy')}}</a></li>
+                        @else
+                            <li><i class="bx bx-chevron-right"></i> <a href="{{ route('eng.policy.show') }}">{{__('Privacy policy')}}</a></li>
+                        @endif
                     </ul>
                 </div>
 
