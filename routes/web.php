@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ContactController;
 use App\Http\Controllers\EventsController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ReservationController;
@@ -36,4 +37,7 @@ Route::middleware(['env.auth'])->group(function () {
         session()->put('locale', $locale);
         return redirect()->back();
     })->name('locale');
+
+    // CONTACT MAIL
+    Route::post('/contact-mail', [ContactController::class, 'sendContactMail'])->name('contact.mail');
 });

@@ -12,7 +12,7 @@ class ReservationController extends Controller
     {
         // Production mail: H9123@accor.com
         Mail::to('michal3085@gmail.com')->send(new ReservationMail($request->all()));
-
+ 
         return view('mails.reservationConfirmation')->with(['menu' => 0]);
     }
 }
