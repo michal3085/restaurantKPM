@@ -10,7 +10,7 @@ class ContactController extends Controller
 {
     public function sendContactMail(ContactRequest $request)
     {
-        Mail::to('michal3085@gmail.com')->send(new ContactMail($request->all()));
+        Mail::to('H9123@accor.com')->send(new ContactMail($request->all()));
 
         return view('mails.reservationConfirmation')->with(['menu' => 0]);
     }
