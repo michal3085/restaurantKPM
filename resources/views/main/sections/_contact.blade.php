@@ -74,11 +74,11 @@
                     </div>
 
                     <div class="form-check">
-                        <div class="custom-control custom-switch">
-                            <label class="custom-control-label" for="">
-                                <div class="checkbox-container">
+                        <div class="custom-control2 custom-switch2">
+                            <label class="custom-control-label2" for="customSwitch2">
+                                <div class="checkbox-container2">
                                     <input type="checkbox" class="checkbox" name="cont_agree" id="customSwitch2" required>
-                                    <span class="checkbox-label" style="font-size: 15px;">
+                                    <span class="checkbox-label2" style="font-size: 15px;">
                                 {{ __('I have read the privacy policy, available at the link ') }}
                                         @if (session('locale') === 'pl' or session('locale') === null)
                                             <a href="{{ route('pl.policy.show') }}" target="_blank">(link)</a>
@@ -113,7 +113,7 @@
 
 <script>
     $(document).ready(function () {
-        $('#myForm').submit(function (event) {
+        $('#myForm2').submit(function (event) {
             if (!$('#customSwitch2').prop('checked')) {
                 alert('Zaakceptuj politykę prywatności przed przesłaniem formularza.');
                 event.preventDefault(); // Zatrzymaj przesyłanie formularza
