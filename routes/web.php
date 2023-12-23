@@ -18,7 +18,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware(['env.auth'])->group(function () {
+
     Route::get('/', [HomeController::class, 'index'])->name('home');
 
     //RESERVATION MAIL
@@ -28,7 +28,6 @@ Route::middleware(['env.auth'])->group(function () {
     Route::get('/event/{event}', [EventsController::class, 'showEvent'])->name('event.show');
 
     //TERMS
-    Route::get('/policy/dupa', [TermsAndPoliticsController::class, 'getPlPrivacyPolicyPdf'])->name('policy.show');
     Route::get('/policy/pl', [TermsAndPoliticsController::class, 'getPlPrivacyPolicyPdf'])->name('pl.policy.show');
     Route::get('/policy/eng', [TermsAndPoliticsController::class, 'getEngPrivacyPolicyPdf'])->name('eng.policy.show');
 
@@ -40,4 +39,3 @@ Route::middleware(['env.auth'])->group(function () {
 
     // CONTACT MAIL
     Route::post('/contact-mail', [ContactController::class, 'sendContactMail'])->name('contact.mail');
-});
