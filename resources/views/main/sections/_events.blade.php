@@ -21,6 +21,7 @@
                                 <div class="col-lg-6">
                                     <ul>
                                         <li><i class="bi bi-check-circled"></i>{{__('Christenings and the first birthday')}}</li>
+                                        <li><a href="{{ route('event.show', 'christmas-party') }}">{{__('Christmas party')}}</a></li>
                                         <li><i class="bi bi-check-circled"></i>{{__('Communions')}}</li>
                                         <li><i class="bi bi-check-circled"></i>{{__('Weddings')}}</li>
                                         <li><i class="bi bi-check-circled"></i>{{__('Banquets')}}</li>
@@ -34,7 +35,7 @@
                                         <li><i class="bi bi-check-circled"></i>{{__('Baby shower')}}</li>
                                         <li><i class="bi bi-check-circled"></i>{{__('Company parties')}}</li>
                                         <li><i class="bi bi-check-circled"></i>{{__('Funeral banquet')}}</li>
-                                        <li><i class="bi bi-check-circled"></i>{{__('e.t.c')}}</li>
+                                        <li><a href="{{ route('event.show', 'lunch-menu') }}">{{__('Lunch')}}</a></li>
                                     </ul>
                                 </div>
                             </div>

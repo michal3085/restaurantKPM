@@ -113,7 +113,7 @@
 
         <div class="contact-info d-flex align-items-center">
             <i class="bi bi-phone d-flex align-items-center"><span>74 665 54 44</span></i>
-            <i class="bi bi-clock d-flex align-items-center ms-4"><span> {{__('Mon-Sun: 3PM - 9PM')}}</span></i>
+            <i class="bi bi-clock d-flex align-items-center ms-4"><span> {{__('Mon-Sun: 3:00 PM - 9:00 PM')}} ({{__('Bar 3:00PM - 11:00PM')}})</span></i>
         </div>
 
         <div class="languages d-none d-md-flex align-items-center">
@@ -135,7 +135,7 @@
         @if (isset($menu) && $menu == 0)
             <nav id="navbar" class="navbar order-last order-lg-0">
                 <ul>
-                    <li><a class="nav-link scrollto active" href="#hero">{{__('Home')}}</a></li>
+                    <li><a class="nav-link scrollto active" href="{{ route('home') }}">{{__('Home')}}</a></li>
                 </ul>
             </nav>
         @else
@@ -208,8 +208,11 @@
 {{--                        <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>--}}
 {{--                        <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>--}}
 {{--                        <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>--}}
-                        <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+                        @if (session('locale') === 'pl' or session('locale') === null)
+                            <li><i class="bx bx-chevron-right"></i> <a href="{{ route('pl.policy.show') }}" target="_blank">{{__('Privacy policy')}}</a></li>
+                        @else
+                            <li><i class="bx bx-chevron-right"></i> <a href="{{ route('eng.policy.show') }}" target="_blank">{{__('Privacy policy')}}</a></li>
+                        @endif
                     </ul>
                 </div>
 

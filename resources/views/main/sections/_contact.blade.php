@@ -29,8 +29,8 @@
                         <i class="bi bi-clock"></i>
                         <h4>{{__('Open Hours:')}}</h4>
                         <p>
-                            Monday-Saturday:<br>
-                            15:00 - 21:00
+                            {{__('Mon-Sun: 3:00 PM - 11:00 PM')}} <br>
+                            ({{__('Bar 3:00PM - 11:00PM')}})
                         </p>
                     </div>
 
@@ -52,32 +52,55 @@
 
             <div class="col-lg-8 mt-5 mt-lg-0">
 
-                <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                <form action="{{ route('contact.mail') }}" method="post" role="form" class="php-email-form">
+                    @csrf
                     <div class="row">
                         <div class="col-md-6 form-group">
-                            <input type="text" name="name" class="form-control" id="name"
+                            <input type="text" name="cont_name" class="form-control" id="name"
                                    placeholder="{{__('Name')}}" required>
                         </div>
                         <div class="col-md-6 form-group mt-3 mt-md-0">
-                            <input type="email" class="form-control" name="email" id="email"
+                            <input type="email" class="form-control" name="cont_email" id="email"
                                    placeholder="{{__('Your Email')}}" required>
                         </div>
                     </div>
                     <div class="form-group mt-3">
-                        <input type="text" class="form-control" name="subject" id="subject"
+                        <input type="text" class="form-control" name="cont_subject" id="subject"
                                placeholder="{{__('Subject')}}" required>
                     </div>
                     <div class="form-group mt-3">
-                                <textarea class="form-control" name="message" rows="8" placeholder="{{__('Your message')}}"
+                                <textarea class="form-control" name="cont_message" rows="8" placeholder="{{__('Your message')}}"
                                           required></textarea>
                     </div>
+
+                    <div class="form-check">
+                        <div class="custom-control2 custom-switch2">
+                            <label class="custom-control-label2" for="customSwitch2">
+                                <div class="checkbox-container2">
+                                    <input type="checkbox" class="checkbox" name="cont_agree" id="customSwitch2">
+                                    <span class="checkbox-label2" style="font-size: 15px;">
+                                {{ __('I have read the privacy policy, available at the link ') }}
+                                        @if (session('locale') === 'pl' or session('locale') === null)
+                                            <a href="{{ route('pl.policy.show') }}" target="_blank">(link)</a>
+                                        @else
+                                            <a href="{{ route('eng.policy.show') }}" target="_blank">(link)</a>
+                                        @endif
+                                        .
+                                {{ __(' I am aware that the administrator of my personal data is Munro sp. z o.o., based at 27 Jana Pawła II Avenue, 00-867 Warsaw, and that the personal data will be processed for the purpose of contacting and handling my inquiry.') }}
+                                <span style="color: red">*</span>
+                            </span>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+
                     <div class="my-3">
                         <div class="loading">Loading</div>
                         <div class="error-message"></div>
                         <div class="sent-message">Your message has been sent. Thank you!</div>
                     </div>
                     <div class="text-center">
-                        <button type="submit">Send Message</button>
+                        <button type="submit">{{ __('Send Message') }}</button>
                     </div>
                 </form>
 
@@ -87,3 +110,14 @@
 
     </div>
 </section>
+
+<script>
+    $(document).ready(function () {
+        $('#myForm2').submit(function (event) {
+            if (!$('#customSwitch2').prop('checked')) {
+                alert('Zaakceptuj politykę prywatności przed przesłaniem formularza.');
+                event.preventDefault(); // Zatrzymaj przesyłanie formularza
+            }
+        });
+    });
+</script>
