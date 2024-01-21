@@ -166,6 +166,13 @@
                     {{--                    </ul>--}}
                     {{--                </li>--}}
                     <li><a class="nav-link scrollto" href="#contact">{{__('Contact')}}</a></li>
+
+                    <li class="d-lg-none"><!-- Hidden on screens larger than lg (large) -->
+                        <a href="{{ route('locale', 'pl') }}">PL</a>
+                    </li>
+                    <li class="d-lg-none"><!-- Hidden on screens larger than lg (large) -->
+                        <a href="{{ route('locale', 'en') }}">EN</a>
+                    </li>
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
             </nav><!-- .navbar -->
