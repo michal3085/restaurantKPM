@@ -113,7 +113,7 @@
 
         <div class="contact-info d-flex align-items-center">
             <i class="bi bi-phone d-flex align-items-center"><span>74 665 54 44</span></i>
-            <i class="bi bi-clock d-flex align-items-center ms-4"><span> {{__('Mon-Sun: 3PM - 9PM')}} (Bar 15:00 - 23:00)</span></i>
+            <i class="bi bi-clock d-flex align-items-center ms-4"><span> {{__('Mon-Sun: 3:00 PM - 9:00 PM')}} ({{__('Bar 3:00PM - 11:00PM')}})</span></i>
         </div>
 
         <div class="languages d-none d-md-flex align-items-center">

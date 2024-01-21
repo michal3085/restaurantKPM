@@ -29,8 +29,8 @@
                         <i class="bi bi-clock"></i>
                         <h4>{{__('Open Hours:')}}</h4>
                         <p>
-                            Monday-Saturday:<br>
-                            15:00 - 21:00
+                            {{__('Mon-Sun: 3:00 PM - 11:00 PM')}} <br>
+                            ({{__('Bar 3:00PM - 11:00PM')}})
                         </p>
                     </div>
 
@@ -77,7 +77,7 @@
                         <div class="custom-control2 custom-switch2">
                             <label class="custom-control-label2" for="customSwitch2">
                                 <div class="checkbox-container2">
-                                    <input type="checkbox" class="checkbox" name="cont_agree" id="customSwitch2" required>
+                                    <input type="checkbox" class="checkbox" name="cont_agree" id="customSwitch2">
                                     <span class="checkbox-label2" style="font-size: 15px;">
                                 {{ __('I have read the privacy policy, available at the link ') }}
                                         @if (session('locale') === 'pl' or session('locale') === null)
