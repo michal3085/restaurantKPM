@@ -24,7 +24,7 @@ class AppServiceProvider extends ServiceProvider
          * Wysyłka maila w srodowisku developerskim zawsze na ten adres.
          */
         if ($this->app->environment('local')) {
-            Mail::alwaysTo('michal.broszkiewicz@bmsoftware.com.pl');
+            Mail::alwaysTo(env('MAIL_TO_TEST'));
         }
     }
 }
