@@ -283,7 +283,7 @@
             <div class="col-lg-6 menu-item filter-korean-special">
                 <img src="assets/img/menu/korean/MAKARON STRI-FRY.jpg" class="menu-img" alt="">
                 <div class="menu-content">
-                    <a href="#">{{ __('STRI-FRY NOODLES') }}</a><span>38/48* PLN</span>
+                    <a href="#">{{ __('STIR-FRY NOODLES') }}</a><span>38/48* PLN</span>
                 </div>
                 <div class="menu-ingredients">
                     {{ __('Noodles, peppers, carrots, onion, pak choi, oyster mushrooms, duck breast*') }}
