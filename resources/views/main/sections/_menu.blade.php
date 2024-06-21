@@ -17,6 +17,7 @@
                     <li data-filter=".filter-soups">{{ __('Soups') }}</li>
                     <li data-filter=".filter-salads">{{ __('Salads') }}</li>
                     <li data-filter=".filter-kids">{{ __('For kids') }}</li>
+                    <li data-filter=".filter-korean-special">{{ __('KOREAN SPECIAL MENU') }}</li>
                     <li data-filter="*">{{ __('All dishes') }}</li>
                 </ul>
             </div>
@@ -277,6 +278,80 @@
                 </div>
                 <div class="menu-ingredients"></div>
             </div>
+
+{{--            KOREAN SPECIAL MENU  --}}
+            <div class="col-lg-6 menu-item filter-korean-special">
+                <img src="assets/img/menu/korean/MAKARON STRI-FRY.jpg" class="menu-img" alt="">
+                <div class="menu-content">
+                    <a href="#">{{ __('STIR-FRY NOODLES') }}</a><span>38/48* PLN</span>
+                </div>
+                <div class="menu-ingredients">
+                    {{ __('Noodles, peppers, carrots, onion, pak choi, oyster mushrooms, duck breast*') }}
+                </div>
+            </div>
+
+            <div class="col-lg-6 menu-item filter-korean-special">
+                <img src="assets/img/menu/korean/KURCZAK DAKGANGJEONG.jpg" class="menu-img" alt="">
+                <div class="menu-content">
+                    <a href="#">{{ __('DAKGANGJEONG CHICKEN') }}</a><span>54 PLN</span>
+                </div>
+                <div class="menu-ingredients">
+                    {{ __('Breaded chicken leg, shimeji mushrooms, kimchi') }}
+                </div>
+            </div>
+
+            <div class="col-lg-6 menu-item filter-korean-special">
+                <img src="assets/img/menu/korean/ANTRYKOT GALBI.jpg" class="menu-img" alt="">
+                <div class="menu-content">
+                    <a href="#">{{ __('GALBI ANTICOT') }}</a><span>99 PLN</span>
+                </div>
+                <div class="menu-ingredients">
+                    {{ __('Antrikote, ginger, pear, cherry tomatoes, coriander, kimchi') }}
+                </div>
+            </div>
+
+            <div class="col-lg-6 menu-item filter-korean-special">
+                {{--                <img src="assets/img/menu/REVEMENU1S.jpg" class="menu-img" alt="">--}}
+
+            </div>
+            <div class="col-lg-6 menu-item filter-korean-special">
+                {{--                <img src="assets/img/menu/REVEMENU1S.jpg" class="menu-img" alt="">--}}
+
+            </div>
+            <div class="col-lg-6 menu-item filter-korean-special">
+                <p>Napoje</p>
+            </div>
+
+            <div class="col-lg-6 menu-item filter-korean-special">
+                {{--                <img src="assets/img/menu/REVEMENU1S.jpg" class="menu-img" alt="">--}}
+                <div class="menu-content">
+                    <a href="#">{{ __('KOREAN TEA') }}</a><span>15 PLN</span>
+                </div>
+                <div class="menu-ingredients">
+                    {{ __('Aloe Vera / Jujube') }}
+                </div>
+            </div>
+
+            <div class="col-lg-6 menu-item filter-korean-special">
+                {{--                <img src="assets/img/menu/REVEMENU1S.jpg" class="menu-img" alt="">--}}
+                <div class="menu-content">
+                    <a href="#">{{ __('BUTTERFLY ICE TEA') }}</a><span>18 PLN</span>
+                </div>
+                <div class="menu-ingredients">
+                    {{ __('Clitoria ternatensis flower, lime, rosemary') }}
+                </div>
+            </div>
+
+            <div class="col-lg-6 menu-item filter-korean-special">
+                {{--                <img src="assets/img/menu/REVEMENU1S.jpg" class="menu-img" alt="">--}}
+                <div class="menu-content">
+                    <a href="#">{{ __('SOMAEK') }}</a><span>36 PLN</span>
+                </div>
+                <div class="menu-ingredients">
+                    {{ __('Beer, Soju') }}
+                </div>
+            </div>
+
         </div>
 
     </div>
